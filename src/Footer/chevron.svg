@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="8" viewBox="0 0 15 8">
-    <desc>
-        Created using Figma
-    </desc>
-    <use fill="#484848" transform="matrix(.95043 0 0 .95043 -.003 -.002)" xlink:href="#a"/>
-    <defs>
-        <path id="a" d="M13.72.247a.842.842 0 0 1 1.191 1.191L8.175 8.171a.842.842 0 0 1-1.191 0L.247 1.438A.842.842 0 1 1 1.437.247L7.58 6.385 13.721.247z"/>
-    </defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="8" viewBox="0 0 15 8"><desc>Created using Figma</desc><use fill="#484848" transform="matrix(.95043 0 0 .95043 -.003 -.002)" xlink:href="#a"/><defs><path id="a" d="M13.72.247a.842.842 0 0 1 1.191 1.191L8.175 8.171a.842.842 0 0 1-1.191 0L.247 1.438A.842.842 0 1 1 1.437.247L7.58 6.385 13.721.247z"/></defs></svg>

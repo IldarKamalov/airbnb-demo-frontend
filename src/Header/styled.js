@@ -41,7 +41,7 @@ export const SearchInput = styled.input`
   height: 24px;
   padding: 0 15px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+  font-size: 16px;
   color: #383838;
   border: 0;
   outline: 0;

@@ -83,8 +83,8 @@ export const Select = styled.select`
   padding: 0 40px 0 15px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-	font-weight: 300;
-	color: #383838;
+  font-weight: 300;
+  color: #383838;
   border: solid 1px rgba(72, 72, 72, 0.2);
   border-radius: 4px;
   background: url(${chevron}) no-repeat;

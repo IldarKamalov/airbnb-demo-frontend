@@ -15,7 +15,7 @@ export const Section = styled.div`
 export const Title = styled.div`
   margin-bottom: 24px;
   font-size: 32px;
-	font-weight: bold;
-	line-height: 1.06;
-	color: #383838;
+  font-weight: bold;
+  line-height: 1.06;
+  color: #383838;
 `;
