@@ -38,6 +38,8 @@ export const SearchIcon = styled.img`
 `;
 
 export const SearchInput = styled.input`
+  display: block;
+  width: 100%;
   height: 24px;
   padding: 0 15px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
