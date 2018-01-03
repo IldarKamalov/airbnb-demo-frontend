@@ -1,4 +1,5 @@
 import React from 'react';
+import {Content, Section, Title} from './styled';
 
 import homeImage from './explore/home.png';
 import homeImage2x from './explore/home@2x.png';
@@ -47,422 +48,410 @@ import tokyoImage2x from './destinations/tokyo@2x.png';
 
 export default function () {
   return (
-    <div className="content">
-      <div className="content__section">
-        <div className="content__title">
+    <Content>
+      <Section>
+        <Title>
           Explore Airbnb
-        </div>
-        <div className="content__cards">
-          <div className="row">
-            <div className="col-xs-4">
-              <div className="card card--horizontal">
-                <img
-                  src={homeImage}
-                  srcSet={homeImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <img src="" alt="" className="card__image" />
-                <div className="card__title">
-                  Homes
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-4">
-              <div className="card card--horizontal">
-                <img
-                  src={experiencesImage}
-                  srcSet={experiencesImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  Experiences
-                </div>
-              </div>
-            </div>
-            <div className="col-xs-4">
-              <div className="card card--horizontal">
-                <img
-                  src={restaurantsImage}
-                  srcSet={restaurantsImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  Restaurants
-                </div>
+        </Title>
+        <div className="row">
+          <div className="col-xs-4">
+            <div className="card card--horizontal">
+              <img
+                src={homeImage}
+                srcSet={homeImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                Homes
               </div>
             </div>
           </div>
-
+          <div className="col-xs-4">
+            <div className="card card--horizontal">
+              <img
+                src={experiencesImage}
+                srcSet={experiencesImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                Experiences
+              </div>
+            </div>
+          </div>
+          <div className="col-xs-4">
+            <div className="card card--horizontal">
+              <img
+                src={restaurantsImage}
+                srcSet={restaurantsImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                Restaurants
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </Section>
 
-      <div className="content__section">
-        <div className="content__title">
+      <Section>
+        <Title>
           Experiences
-        </div>
-        <div className="content__cards">
-          <div className="row">
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={forestImage}
-                  srcSet={forestImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  <strong className="card__price">$29</strong>
-                  Forest therapy
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">44 reviews</div>
-                </div>
+        </Title>
+        <div className="row">
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={forestImage}
+                srcSet={forestImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                <strong className="card__price">$29 </strong>
+                Forest therapy
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">44 reviews</div>
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={mountainImage}
-                  srcSet={mountainImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  <strong className="card__price">$29</strong>
-                  Forest therapy
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">44 reviews</div>
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={whaleImage}
+                srcSet={whaleImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                <strong className="card__price">$69 </strong>
+                Whale watching
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">46 reviews</div>
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={salsaImage}
-                  srcSet={salsaImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  <strong className="card__price">$29</strong>
-                  Forest therapy
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">44 reviews</div>
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={mountainImage}
+                srcSet={mountainImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                <strong className="card__price">$69 </strong>
+                Table Mountain Summit, Cable Car Down
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">44 reviews</div>
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={whaleImage}
-                  srcSet={whaleImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title">
-                  <strong className="card__price">$29</strong>
-                  Forest therapy
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">44 reviews</div>
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={salsaImage}
+                srcSet={salsaImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title">
+                <strong className="card__price">$50 </strong>
+                Salsa Night
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">44 reviews</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div className="content__section">
-        <div className="content__title">
+      <Section>
+        <Title>
           Homes
-        </div>
-        <div className="content__cards">
-          <div className="row">
-            <div className="col-xs-4">
-              <div className="card">
-                <img
-                  src={firstHomeImage}
-                  srcSet={firstHomeImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold">
-                  <strong className="card__price">$82</strong>
-                  La Salentina, see, nature & relax
-                </div>
-                <div className="card__description">
-                  <span className="card__description-item">
-                    Entire house
+        </Title>
+        <div className="row">
+          <div className="col-xs-4">
+            <div className="card">
+              <img
+                src={firstHomeImage}
+                srcSet={firstHomeImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold">
+                <strong className="card__price">$82</strong>
+                La Salentina, see, nature & relax
+              </div>
+              <div className="card__description">
+                <span className="card__description-item">
+                  Entire house
+                </span>
+                <span className="card__description-item">
+                  9 beds
+                </span>
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">
+                  <span className="card__reviews-item">
+                    97
                   </span>
-                  <span className="card__description-item">
-                    9 beds
+                  <span className="card__reviews-item">
+                    Superhost
                   </span>
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">
-                    <span className="card__reviews-item">
-                      97
-                    </span>
-                    <span className="card__reviews-item">
-                      Superhost
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-xs-4">
-              <div className="card">
-                <img
-                  src={secondHomeImage}
-                  srcSet={secondHomeImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold">
-                  <strong className="card__price">$82</strong>
-                  La Salentina, see, nature & relax
-                </div>
-                <div className="card__description">
-                  <span className="card__description-item">
-                    Entire house
+          </div>
+          <div className="col-xs-4">
+            <div className="card">
+              <img
+                src={secondHomeImage}
+                srcSet={secondHomeImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold">
+                <strong className="card__price">$82</strong>
+                Your private 3 bedr. riad and exclusi…
+              </div>
+              <div className="card__description">
+                <span className="card__description-item">
+                  Entire house
+                </span>
+                <span className="card__description-item">
+                  5 beds
+                </span>
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">
+                  <span className="card__reviews-item">
+                    97
                   </span>
-                  <span className="card__description-item">
-                    9 beds
+                  <span className="card__reviews-item">
+                    Superhost
                   </span>
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">
-                    <span className="card__reviews-item">
-                      97
-                    </span>
-                    <span className="card__reviews-item">
-                      Superhost
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-xs-4">
-              <div className="card">
-                <img
-                  src={thirdHomeImage}
-                  srcSet={thirdHomeImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold">
-                  <strong className="card__price">$82</strong>
-                  La Salentina, see, nature & relax
-                </div>
-                <div className="card__description">
-                  <span className="card__description-item">
-                    Entire house
+          </div>
+          <div className="col-xs-4">
+            <div className="card">
+              <img
+                src={thirdHomeImage}
+                srcSet={thirdHomeImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold">
+                <strong className="card__price">$200</strong>
+                Dreamy Tropical Tree House
+              </div>
+              <div className="card__description">
+                <span className="card__description-item">
+                  Entire treehouse
+                </span>
+                <span className="card__description-item">
+                  1 bed
+                </span>
+              </div>
+              <div className="card__rating">
+                <div className="rating rating--5stars" />
+                <div className="card__reviews">
+                  <span className="card__reviews-item">
+                    97
                   </span>
-                  <span className="card__description-item">
-                    9 beds
+                  <span className="card__reviews-item">
+                    Superhost
                   </span>
-                </div>
-                <div className="card__rating">
-                  <div className="rating rating--5stars" />
-                  <div className="card__reviews">
-                    <span className="card__reviews-item">
-                      97
-                    </span>
-                    <span className="card__reviews-item">
-                      Superhost
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div className="content__section">
-        <div className="content__title">
+      <Section>
+        <Title>
           Popular reservations around the world
-        </div>
-        <div className="content__cards">
-          <div className="row">
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={chumleyImage}
-                  srcSet={chumleyImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__subtitle">
-                  Speakeasy
-                </div>
-                <div className="card__title">
-                  Chumley’s
-                </div>
-                <div className="card__description card__description--price">
-                  About $60 per person
-                </div>
+        </Title>
+        <div className="row">
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={chumleyImage}
+                srcSet={chumleyImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__subtitle">
+                Speakeasy
+              </div>
+              <div className="card__title">
+                Chumley’s
+              </div>
+              <div className="card__description card__description--price">
+                About $60 per person
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={hanjanImage}
-                  srcSet={hanjanImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__subtitle">
-                  Speakeasy
-                </div>
-                <div className="card__title">
-                  Chumley’s
-                </div>
-                <div className="card__description card__description--price">
-                  About $60 per person
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={hanjanImage}
+                srcSet={hanjanImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__subtitle">
+                Speakeasy
+              </div>
+              <div className="card__title">
+                Chumley’s
+              </div>
+              <div className="card__description card__description--price">
+                About $60 per person
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={primeImage}
-                  srcSet={primeImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__subtitle">
-                  Speakeasy
-                </div>
-                <div className="card__title">
-                  Chumley’s
-                </div>
-                <div className="card__description card__description--price">
-                  About $60 per person
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={primeImage}
+                srcSet={primeImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__subtitle">
+                Korean gastropub
+              </div>
+              <div className="card__title">
+                Chumley’s
+              </div>
+              <div className="card__description card__description--price">
+                About $60 per person
               </div>
             </div>
-            <div className="col-xs-3">
-              <div className="card">
-                <img
-                  src={seapriceImage}
-                  srcSet={seapriceImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__subtitle">
-                  Speakeasy
-                </div>
-                <div className="card__title">
-                  Chumley’s
-                </div>
-                <div className="card__description card__description--price">
-                  About $60 per person
-                </div>
+          </div>
+          <div className="col-xs-3">
+            <div className="card">
+              <img
+                src={seapriceImage}
+                srcSet={seapriceImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__subtitle">
+                Speakeasy
+              </div>
+              <div className="card__title">
+                Chumley’s
+              </div>
+              <div className="card__description card__description--price">
+                About $60 per person
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Section>
 
-      <div className="content__section">
-        <div className="content__title">
+      <Section>
+        <Title>
           Featured destinations
-        </div>
-        <div className="content__cards">
-          <div className="row">
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={parisImage}
-                  srcSet={parisImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Paris
-                </div>
+        </Title>
+        <div className="row">
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={parisImage}
+                srcSet={parisImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Paris
               </div>
             </div>
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={miamiImage}
-                  srcSet={miamiImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Miami
-                </div>
+          </div>
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={miamiImage}
+                srcSet={miamiImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Miami
               </div>
             </div>
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={tokyoImage}
-                  srcSet={tokyoImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Tokyo
-                </div>
+          </div>
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={tokyoImage}
+                srcSet={tokyoImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Tokyo
               </div>
             </div>
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={capeTownImage}
-                  srcSet={capeTownImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Cape town
-                </div>
+          </div>
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={capeTownImage}
+                srcSet={capeTownImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Cape town
               </div>
             </div>
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={seoulImage}
-                  srcSet={seoulImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Seoul
-                </div>
+          </div>
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={seoulImage}
+                srcSet={seoulImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Seoul
               </div>
             </div>
-            <div className="col-xs-2">
-              <div className="card">
-                <img
-                  src={losAngelesImage}
-                  srcSet={losAngelesImage2x + ' 2x'}
-                  alt="image"
-                  className="card__image"
-                />
-                <div className="card__title card__title--bold card__title--small">
-                  Los Angeles
-                </div>
+          </div>
+          <div className="col-xs-2">
+            <div className="card">
+              <img
+                src={losAngelesImage}
+                srcSet={losAngelesImage2x + ' 2x'}
+                alt="image"
+                className="card__image"
+              />
+              <div className="card__title card__title--bold card__title--small">
+                Los Angeles
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Section>
+    </Content>
   );
 }

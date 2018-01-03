@@ -5,8 +5,6 @@ import {
   Column,
   Title,
   Link,
-  BottomLink,
-  IconLink,
   Bottom,
   Nav,
   Logo,
@@ -73,18 +71,18 @@ export default function () {
           <Logo src={logo} />
           <Copy>© Airbnb Inc.</Copy>
           <Nav>
-            <BottomLink href="#!">Terms</BottomLink>
-            <BottomLink href="#!">Privacy</BottomLink>
-            <BottomLink href="#!">Site map</BottomLink>
-            <IconLink href="#!">
+            <Link bottom href="#!">Terms</Link>
+            <Link bottom href="#!">Privacy</Link>
+            <Link bottom href="#!">Site map</Link>
+            <Link icon href="#!">
               <Icon src={facebook} />
-            </IconLink>
-            <IconLink href="#!">
+            </Link>
+            <Link icon href="#!">
               <Icon src={twitter} />
-            </IconLink>
-            <IconLink href="#!">
+            </Link>
+            <Link icon href="#!">
               <Icon src={instagram} />
-            </IconLink>
+            </Link>
           </Nav>
         </Bottom>
       </div>

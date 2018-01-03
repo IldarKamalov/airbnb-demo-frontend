@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import chevron from './chevron.svg';
 
 export const Footer = styled.footer`
@@ -38,18 +38,18 @@ export const Link = styled.a`
   &:focus {
     text-decoration: underline;
   }
-`;
 
-export const BottomLink = Link.extend`
-  margin: 0 15px 0 0;
-`;
+  ${props => props.bottom && css`
+    margin: 0 15px 0 0;
+  `}
 
-export const IconLink = Link.extend`
-  margin: 2px 12px 0 0;
+  ${props => props.icon && css`
+    margin: 2px 12px 0 0;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+      margin-right: 0;
+    }
+  `}
 `;
 
 export const Nav = styled.nav`
@@ -86,8 +86,9 @@ export const Select = styled.select`
 	font-weight: 300;
 	color: #383838;
   border: solid 1px rgba(72, 72, 72, 0.2);
+  border-radius: 4px;
   background: url(${chevron}) no-repeat;
-  background-position: right 14px bottom 17px;
+  background-position: right 14px bottom 18px;
   background-size: 15px 10px;
   outline: 0;
   appearance: none;

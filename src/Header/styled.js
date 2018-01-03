@@ -29,7 +29,7 @@ export const Search = styled.form`
   padding: 14px 16px;
   box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.08);
   border: solid 1px rgba(72, 72, 72, 0.2);
-  border-radius: 5px;
+  border-radius: 4px;
 `;
 
 export const SearchIcon = styled.img`
