@@ -1,5 +1,16 @@
 import React from 'react';
 import {Content, Section, Title, All} from './styled';
+
+import {
+  Card,
+  CardImg,
+  CardTitle,
+  CardPrice,
+  CardRating,
+  CardReview,
+  CardDivider,
+  CardDescription,
+} from '../elements/Card';
 import Rating from '../elements/Rating';
 
 import firstHomeImage from './homes/first.png';
@@ -18,103 +29,82 @@ export default function Homes () {
       </Title>
       <div className="row">
         <div className="col-xs-4">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={firstHomeImage}
               srcSet={firstHomeImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__title card__title--bold">
-              <strong className="card__price">$82</strong>
+            <CardTitle>
+              <CardPrice>$82</CardPrice>
               La Salentina, see, nature & relax
-            </div>
-            <div className="card__description">
-              <span className="card__description-item">
-                Entire house
-              </span>
-              <span className="card__description-item">
-                9 beds
-              </span>
-            </div>
-            <div className="card__rating">
+            </CardTitle>
+            <CardDescription>
+              Entire house
+              <CardDivider> · </CardDivider>
+              9 beds
+            </CardDescription>
+            <CardRating>
               <Rating five />
-              <div className="card__reviews">
-                <span className="card__reviews-item">
-                  97
-                </span>
-                <span className="card__reviews-item">
-                  Superhost
-                </span>
-              </div>
-            </div>
-          </div>
+              <CardReview>
+                97
+                <CardDivider> · </CardDivider>
+                Superhost
+              </CardReview>
+            </CardRating>
+          </Card>
         </div>
         <div className="col-xs-4">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={secondHomeImage}
               srcSet={secondHomeImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__title card__title--bold">
-              <strong className="card__price">$82</strong>
-              Your private 3 bedr. riad and exclusi…
-            </div>
-            <div className="card__description">
-              <span className="card__description-item">
-                Entire house
-              </span>
-              <span className="card__description-item">
-                5 beds
-              </span>
-            </div>
-            <div className="card__rating">
+            <CardTitle>
+              <CardPrice>$82</CardPrice>
+              Your private 3 bedr. riad and exclusive
+            </CardTitle>
+            <CardDescription>
+              Entire house
+              <CardDivider> · </CardDivider>
+              5 beds
+            </CardDescription>
+            <CardRating>
               <Rating five />
-              <div className="card__reviews">
-                <span className="card__reviews-item">
-                  97
-                </span>
-                <span className="card__reviews-item">
-                  Superhost
-                </span>
-              </div>
-            </div>
-          </div>
+              <CardReview>
+                97
+                <CardDivider> · </CardDivider>
+                Superhost
+              </CardReview>
+            </CardRating>
+          </Card>
         </div>
         <div className="col-xs-4">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={thirdHomeImage}
               srcSet={thirdHomeImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__title card__title--bold">
-              <strong className="card__price">$200</strong>
+            <CardTitle>
+              <CardPrice>$200</CardPrice>
               Dreamy Tropical Tree House
-            </div>
-            <div className="card__description">
-              <span className="card__description-item">
-                Entire treehouse
-              </span>
-              <span className="card__description-item">
-                1 bed
-              </span>
-            </div>
-            <div className="card__rating">
+            </CardTitle>
+            <CardDescription>
+              Entire treehouse
+              <CardDivider> · </CardDivider>
+              1 bed
+            </CardDescription>
+            <CardRating>
               <Rating five />
-              <div className="card__reviews">
-                <span className="card__reviews-item">
-                  97
-                </span>
-                <span className="card__reviews-item">
-                  Superhost
-                </span>
-              </div>
-            </div>
-          </div>
+              <CardReview>
+                197
+                <CardDivider> · </CardDivider>
+                Superhost
+              </CardReview>
+            </CardRating>
+          </Card>
         </div>
       </div>
     </Section>

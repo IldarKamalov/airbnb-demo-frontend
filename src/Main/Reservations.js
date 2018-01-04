@@ -1,6 +1,18 @@
 import React from 'react';
 import {Content, Section, Title} from './styled';
 
+import {
+  Card,
+  CardImg,
+  CardTitle,
+  CardSubtitle,
+  CardPrice,
+  CardRating,
+  CardReview,
+  CardDivider,
+  CardDescription,
+} from '../elements/Card';
+
 import chumleyImage from './reservations/chumley.png';
 import chumleyImage2x from './reservations/chumley@2x.png';
 import hanjanImage from './reservations/hanjan.png';
@@ -16,82 +28,78 @@ export default function Reservations () {
       <Title>
         Popular reservations around the world
       </Title>
-      <div className="row">
+      <div className="row row--overflow">
         <div className="col-xs-3">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={chumleyImage}
               srcSet={chumleyImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__subtitle">
+            <CardSubtitle>
               Speakeasy
-            </div>
-            <div className="card__title">
+            </CardSubtitle>
+            <CardTitle>
               Chumley’s
-            </div>
-            <div className="card__description card__description--price">
+            </CardTitle>
+            <CardDescription price>
               About $60 per person
-            </div>
-          </div>
+            </CardDescription>
+          </Card>
         </div>
         <div className="col-xs-3">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={hanjanImage}
               srcSet={hanjanImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__subtitle">
-              Speakeasy
-            </div>
-            <div className="card__title">
-              Chumley’s
-            </div>
-            <div className="card__description card__description--price">
-              About $60 per person
-            </div>
-          </div>
+            <CardSubtitle>
+              Korean gastropub
+            </CardSubtitle>
+            <CardTitle>
+              Hanjan
+            </CardTitle>
+            <CardDescription price>
+              About $50 per person
+            </CardDescription>
+          </Card>
         </div>
         <div className="col-xs-3">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={primeImage}
               srcSet={primeImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__subtitle">
-              Korean gastropub
-            </div>
-            <div className="card__title">
-              Chumley’s
-            </div>
-            <div className="card__description card__description--price">
-              About $60 per person
-            </div>
-          </div>
+            <CardSubtitle>
+              German american
+            </CardSubtitle>
+            <CardTitle>
+              Prime Meats
+            </CardTitle>
+            <CardDescription price>
+              About $55 per person
+            </CardDescription>
+          </Card>
         </div>
         <div className="col-xs-3">
-          <div className="card">
-            <img
+          <Card>
+            <CardImg
               src={seapriceImage}
               srcSet={seapriceImage2x + ' 2x'}
               alt="main"
-              className="card__image"
             />
-            <div className="card__subtitle">
-              Speakeasy
-            </div>
-            <div className="card__title">
-              Chumley’s
-            </div>
-            <div className="card__description card__description--price">
-              About $60 per person
-            </div>
-          </div>
+            <CardSubtitle>
+              Fine seafood
+            </CardSubtitle>
+            <CardTitle>
+              Seaprice
+            </CardTitle>
+            <CardDescription price>
+              About $70 per person
+            </CardDescription>
+          </Card>
         </div>
       </div>
     </Section>

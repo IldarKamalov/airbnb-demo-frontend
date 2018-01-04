@@ -10,7 +10,7 @@ export const CardImg = styled.img`
 `;
 
 export const CardTitle = styled.div`
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 15px;
   font-weight: ${props => (props.light ? '300' : '700')};
   line-height: 1.4;
@@ -19,6 +19,14 @@ export const CardTitle = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+`;
+
+export const CardSubtitle = styled.div`
+  margin-bottom: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+	color: #383838;
 `;
 
 export const CardPrice = styled.strong`
@@ -36,5 +44,22 @@ export const CardReview = styled.div`
   margin-left: 6px;
   font-size: 12px;
 `;
+
+export const CardReviewType = styled.div``;
+
+export const CardDescription = styled.div`
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 300;
+
+  ${props => props.price && css`
+    margin-bottom: 0;
+	  font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+  `}
+`;
+
+export const CardDivider = styled.span``;
 
 export default Card;

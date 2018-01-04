@@ -20,7 +20,6 @@ export default function () {
     <Section>
       <Title>
         Featured destinations
-        <All href="#!">See all</All>
       </Title>
       <div className="row row--overflow">
         <div className="col-xs-4 col-sm-3 col-md-2">
