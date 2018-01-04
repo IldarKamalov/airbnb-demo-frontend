@@ -28,7 +28,7 @@ export default function Experiences () {
         <All href="#!">See all</All>
       </Title>
       <div className="row row--overflow">
-        <div className="col-xs-3">
+        <div className="col-sm-6 col-md-4 col-lg-3">
           <Card>
             <CardImg
               src={forestImage}
@@ -45,7 +45,7 @@ export default function Experiences () {
             </CardRating>
           </Card>
         </div>
-        <div className="col-xs-3">
+        <div className="col-sm-6 col-md-4 col-lg-3">
           <Card>
             <CardImg
               src={whaleImage}
@@ -62,7 +62,7 @@ export default function Experiences () {
             </CardRating>
           </Card>
         </div>
-        <div className="col-xs-3">
+        <div className="col-sm-6 col-md-4 col-lg-3">
           <Card>
             <CardImg
               src={mountainImage}
@@ -79,7 +79,7 @@ export default function Experiences () {
             </CardRating>
           </Card>
         </div>
-        <div className="col-xs-3">
+        <div className="col-sm-6 col-md-4 col-lg-3">
           <Card>
             <CardImg
               src={salsaImage}

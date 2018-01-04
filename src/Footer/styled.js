@@ -5,7 +5,7 @@ export const Footer = styled.footer`
 `;
 
 export const Top = styled.div`
-  padding: 16px 0 24px;
+  padding: 16px 0 10px;
 
   @media screen and (min-width: 768px) {
     padding: 48px 0;

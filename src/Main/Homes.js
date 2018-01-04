@@ -27,8 +27,8 @@ export default function Homes () {
         Homes
         <All href="#!">See all</All>
       </Title>
-      <div className="row">
-        <div className="col-xs-4">
+      <div className="row row--overflow">
+        <div className="col-sm-8 col-md-5 col-lg-4">
           <Card>
             <CardImg
               src={firstHomeImage}
@@ -54,7 +54,7 @@ export default function Homes () {
             </CardRating>
           </Card>
         </div>
-        <div className="col-xs-4">
+        <div className="col-sm-8 col-md-5 col-lg-4">
           <Card>
             <CardImg
               src={secondHomeImage}
@@ -80,7 +80,7 @@ export default function Homes () {
             </CardRating>
           </Card>
         </div>
-        <div className="col-xs-4">
+        <div className="col-sm-8 col-md-5 col-lg-4">
           <Card>
             <CardImg
               src={thirdHomeImage}

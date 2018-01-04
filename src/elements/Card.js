@@ -10,6 +10,7 @@ export const CardImg = styled.img`
 `;
 
 export const CardTitle = styled.div`
+  max-width: 230px;
   margin-bottom: 3px;
   font-size: 15px;
   font-weight: ${props => (props.light ? '300' : '700')};

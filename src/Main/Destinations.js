@@ -22,7 +22,7 @@ export default function () {
         Featured destinations
       </Title>
       <div className="row row--overflow">
-        <div className="col-xs-4 col-sm-3 col-md-2">
+        <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
               src={parisImage}
@@ -32,7 +32,7 @@ export default function () {
             <CardTitle bold small>Paris</CardTitle>
           </Card>
         </div>
-        <div className="col-xs-4 col-sm-3 col-md-2">
+        <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
               src={miamiImage}
@@ -42,7 +42,7 @@ export default function () {
             <CardTitle bold small>Miami</CardTitle>
           </Card>
         </div>
-        <div className="col-xs-4 col-sm-3 col-md-2">
+        <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
               src={tokyoImage}
@@ -62,7 +62,7 @@ export default function () {
             <CardTitle bold small>Cape town</CardTitle>
           </Card>
         </div>
-        <div className="col-xs-4 col-sm-3 col-md-2">
+        <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
               src={seoulImage}
@@ -72,7 +72,7 @@ export default function () {
             <CardTitle bold small>Seoul</CardTitle>
           </Card>
         </div>
-        <div className="col-xs-4 col-sm-3 col-md-2">
+        <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
               src={losAngelesImage}
