@@ -32,8 +32,16 @@ body {
   font-weight: 400;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1000px;
+@media only screen and (min-width: 1200px) {
+  .container {
+      width: 976px;
+      max-width: 100%;
+  }
+}
+
+/* TODO remove after slider implementation */
+.row--overflow {
+  flex-wrap: nowrap;
+  padding: 5px 0;
+  overflow-y: auto;
 }

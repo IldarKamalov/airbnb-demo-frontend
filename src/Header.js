@@ -3,21 +3,24 @@ import {
   Header,
   Inner,
   Logo,
+  LogoImage,
   Search,
   SearchIcon,
   SearchInput,
   Nav,
   Link,
-} from './styled';
-import logo from './colorLogo.svg';
-import icon from './searchIcon.svg';
+} from './Header/styled';
+import logo from './Header/colorLogo.svg';
+import icon from './Header/searchIcon.svg';
 
 export default function () {
   return (
     <Header>
       <div className="container">
         <Inner>
-          <Logo src={logo} />
+          <Logo type="button">
+            <LogoImage src={logo} />
+          </Logo>
 
           <Search>
             <SearchIcon src={icon} />

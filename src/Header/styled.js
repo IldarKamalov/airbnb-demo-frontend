@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import chevron from '../elements/chevron.svg';
 
 export const Header = styled.header`
   box-shadow: 0 0.5px 0 0 rgba(72, 72, 72, 0.3);
@@ -10,14 +11,37 @@ export const Inner = styled.div`
   height: 80px;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.button`
+  position: relative;
   display: block;
-  max-width: 30px;
-  margin-right: 30px;
+  margin-right: 20px;
+  padding: 0 20px 0 0;
+  border: 0;
+  background: transparent;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    margin-top: -3px;
+    background: url(${chevron}) no-repeat center;
+    background-size: contain;
+    opacity: 0.8;
+  }
 
   @media screen and (min-width: 1024px) {
-    margin-right: 50px;
+    &:after {
+      display: none;
+    }
   }
+`;
+
+export const LogoImage = styled.img`
+  display: block;
+  max-width: 30px;
 `;
 
 export const Search = styled.form`

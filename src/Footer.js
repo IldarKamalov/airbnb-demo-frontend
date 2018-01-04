@@ -2,20 +2,20 @@ import React from 'react';
 import {
   Footer,
   Top,
-  Column,
   Title,
   Link,
   Bottom,
   Nav,
   Logo,
-  Icon,
+  Img,
   Copy,
-  Select,
-} from './styled';
-import logo from './logo.svg';
-import twitter from './twitter.svg';
-import facebook from './facebook.svg';
-import instagram from './instagram.svg';
+  Wrap,
+} from './Footer/styled';
+import logo from './Footer/logo.svg';
+import twitter from './Footer/twitter.svg';
+import facebook from './Footer/facebook.svg';
+import instagram from './Footer/instagram.svg';
+import Select from './elements/Select';
 
 export default function () {
   return (
@@ -23,17 +23,23 @@ export default function () {
       <div className="container">
         <Top>
           <div className="row">
-            <div className="col-xs-4">
-              <Select>
-                <option value="1">English</option>
-                <option value="1">Deutsch</option>
-              </Select>
-              <Select>
-                <option value="1">United States dollar</option>
-                <option value="1">Russian ruble</option>
-              </Select>
+            <div className="col-xs-12 col-md-4">
+              <div className="row">
+                <div className="col-xs-6 col-sm-6 col-md-12">
+                  <Select>
+                    <option value="1">English</option>
+                    <option value="1">Deutsch</option>
+                  </Select>
+                </div>
+                <div className="col-xs-6 col-sm-6 col-md-12">
+                  <Select>
+                    <option value="1">United States dollar</option>
+                    <option value="1">Russian ruble</option>
+                  </Select>
+                </div>
+              </div>
             </div>
-            <div className="col-xs-3">
+            <div className="col-md-3 hidden-xs hidden-sm">
               <Title>
                 Airbnb
               </Title>
@@ -44,7 +50,7 @@ export default function () {
               <Link href="#!">Help</Link>
               <Link href="#!">Diversity & Belonging</Link>
             </div>
-            <div className="col-xs-3">
+            <div className="col-md-3 hidden-xs hidden-sm">
               <Title>
                 Discover
               </Title>
@@ -56,7 +62,7 @@ export default function () {
               <Link href="#!">Guidebooks</Link>
               <Link href="#!">Airbnbmag</Link>
             </div>
-            <div className="col-xs-2">
+            <div className="col-md-2 hidden-xs hidden-sm">
               <Title>
                 Hosting
               </Title>
@@ -68,20 +74,22 @@ export default function () {
           </div>
         </Top>
         <Bottom>
-          <Logo src={logo} />
-          <Copy>© Airbnb Inc.</Copy>
+          <Copy>
+            <Logo src={logo} />
+            © Airbnb Inc.
+          </Copy>
           <Nav>
             <Link bottom href="#!">Terms</Link>
             <Link bottom href="#!">Privacy</Link>
             <Link bottom href="#!">Site map</Link>
-            <Link icon href="#!">
-              <Icon src={facebook} />
+            <Link iconLink href="#!">
+              <Img src={facebook} />
             </Link>
-            <Link icon href="#!">
-              <Icon src={twitter} />
+            <Link iconLink href="#!">
+              <Img src={twitter} />
             </Link>
-            <Link icon href="#!">
-              <Icon src={instagram} />
+            <Link iconLink href="#!">
+              <Img src={instagram} />
             </Link>
           </Nav>
         </Bottom>
