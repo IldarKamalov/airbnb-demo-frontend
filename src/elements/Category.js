@@ -13,20 +13,20 @@ export const Category = styled.div`
   }
 `;
 
-export const CategoryImg = styled.img`
+export const Img = styled.img`
   display: block;
+  width: 100%;
   max-width: 100%;
-  min-height: 90px;
   position: relative;
   border-radius: 4px 4px 0 0;
 
   @media screen and (min-width: 768px) {
-    min-height: 100%;
+    width: auto;
     border-radius: 4px 0 0 4px;
   }
 `;
 
-export const CategoryDescription = styled.div`
+export const Description = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -43,7 +43,7 @@ export const CategoryDescription = styled.div`
   }
 `;
 
-export const CategoryTitle = styled.div`
+export const Title = styled.div`
   width: 100%;
   padding: 12px 12px 13px 12px;
 

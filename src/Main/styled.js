@@ -30,6 +30,7 @@ export const Title = styled.div`
 `;
 
 export const All = styled.a`
+  margin-left: 5px;
   font-size: 14px;
   font-weight: normal;
   text-decoration: none;
@@ -70,7 +71,5 @@ export const Row = styled.div`
     overflow-y: auto;
   `}
 `;
-
-export const Cards = styled.div``;
 
 export default Content;

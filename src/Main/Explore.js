@@ -2,9 +2,9 @@ import React from 'react';
 import {Section, Title, Row} from './styled';
 import {
   Category,
-  CategoryImg,
-  CategoryTitle,
-  CategoryDescription,
+  Img as CategoryImg,
+  Title as CategoryTitle,
+  Description as CategoryDescription,
 } from '../elements/Category';
 
 import homeImage from './explore/home.png';
