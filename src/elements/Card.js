@@ -56,14 +56,14 @@ export const Review = styled.div`
   font-size: 12px;
 `;
 
-export const Description = styled.div`
-  margin-bottom: 5px;
+export const Description = styled.p`
+  margin: 0 0 5px 0;
   font-size: 15px;
   font-weight: 300;
 
   ${props => props.price && `
-    margin-bottom: 0;
-	  font-size: 18px;
+    margin: 0;
+    font-size: 18px;
     font-weight: 300;
     opacity: 0.9;
   `}

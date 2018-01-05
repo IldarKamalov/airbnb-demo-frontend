@@ -14,11 +14,11 @@ export const Section = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h2`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.06;
