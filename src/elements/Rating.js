@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import star from './star.svg';
 
 export const Rating = styled.div`
@@ -12,41 +12,41 @@ export const Rating = styled.div`
   background-position: center;
 
   &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 12px;
-      background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 12px;
+    background-color: #fff;
   }
 
-  ${props => props.five && css`
+  ${props => props.five && `
     &:after {
-        width: 0;
+      width: 0;
     }
   `}
 
-  ${props => props.four && css`
+  ${props => props.four && `
     &:after {
-        width: 12px;
+      width: 12px;
     }
   `}
 
-  ${props => props.three && css`
+  ${props => props.three && `
     &:after {
-        width: 24px;
+      width: 24px;
     }
   `}
 
-  ${props => props.two && css`
+  ${props => props.two && `
     &:after {
-        width: 36px;
+      width: 36px;
     }
   `}
 
-  ${props => props.one && css`
+  ${props => props.one && `
     &:after {
-        width: 48px;
+      width: 48px;
     }
   `}
 `;

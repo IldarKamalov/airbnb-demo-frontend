@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const Card = styled.a`
   display: block;
@@ -25,7 +25,7 @@ export const Title = styled.div`
     margin-bottom: 0;
   }
 
-  ${props => props.ellipsis && css`
+  ${props => props.ellipsis && `
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -61,7 +61,7 @@ export const Description = styled.div`
   font-size: 15px;
   font-weight: 300;
 
-  ${props => props.price && css`
+  ${props => props.price && `
     margin-bottom: 0;
 	  font-size: 18px;
     font-weight: 300;

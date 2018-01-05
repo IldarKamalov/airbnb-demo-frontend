@@ -9,9 +9,9 @@ import {
   SearchInput,
   Nav,
   Link,
-} from './Header/styled';
-import logo from './Header/colorLogo.svg';
-import icon from './Header/searchIcon.svg';
+} from './styled';
+import logo from './colorLogo.svg';
+import icon from './searchIcon.svg';
 
 export default function () {
   return (

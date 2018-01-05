@@ -4,7 +4,6 @@ import chevron from './chevron.svg';
 export const Select = styled.select`
   display: block;
   width: 100%;
-  max-width: 230px;
   height: 40px;
   margin-bottom: 15px;
   padding: 0 30px 0 10px;
@@ -22,11 +21,11 @@ export const Select = styled.select`
   cursor: pointer;
 
   &:focus {
-      border-color: #484848;
+    border-color: #484848;
   }
 
   &::-ms-expand {
-      opacity: 0;
+    opacity: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -38,6 +37,7 @@ export const Select = styled.select`
   }
 
   @media screen and (min-width: 992px) {
+    max-width: 230px;
     padding: 0 40px 0 15px;
     font-size: 18px;
     background-position: right 14px bottom 18px;

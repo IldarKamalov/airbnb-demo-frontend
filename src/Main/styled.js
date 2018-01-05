@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import chevron from '../elements/chevron.svg';
 
 export const Content = styled.div`
@@ -65,7 +65,7 @@ export const Row = styled.div`
   margin-right: -8px;
   margin-left: -8px;
 
-  ${props => props.scroll && css`
+  ${props => props.scroll && `
     flex-wrap: nowrap;
     padding: 5px 0;
     overflow-y: auto;

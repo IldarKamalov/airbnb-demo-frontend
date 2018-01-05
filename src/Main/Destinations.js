@@ -16,13 +16,17 @@ import seoulImage2x from './destinations/seoul@2x.png';
 import tokyoImage from './destinations/tokyo.png';
 import tokyoImage2x from './destinations/tokyo@2x.png';
 
+const DestinationsArrow = SliderArrow.extend`
+  margin-top: 0;
+`;
+
 export default function () {
   return (
     <Section>
       <Title>
         Featured destinations
       </Title>
-      <SliderArrow destinations />
+      <DestinationsArrow />
       <Row scroll>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>

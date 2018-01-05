@@ -32,10 +32,3 @@ body {
   font-weight: 400;
   overflow-x: hidden;
 }
-
-@media only screen and (min-width: 1200px) {
-  .container {
-      width: 976px;
-      max-width: 100%;
-  }
-}

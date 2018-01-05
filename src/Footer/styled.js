@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const Footer = styled.footer`
   box-shadow: 0 -0.5px 0 0 rgba(72, 72, 72, 0.3);
@@ -53,20 +53,20 @@ export const Link = styled.a`
     text-decoration: underline;
   }
 
-  ${props => props.bottom && css`
-    margin: 0 15px 0 0;
-  `}
-
-  ${props => props.iconLink && css`
-    margin: 2px 12px 0 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  `}
-
   @media screen and (min-width: 992px) {
     font-size: 15px;
+  }
+`;
+
+export const BottomLink = Link.extend`
+  margin: 0 15px 0 0;
+`;
+
+export const IconLink = Link.extend`
+  margin: 2px 12px 0 0;
+
+  &:last-child {
+    margin-right: 0;
   }
 `;
 

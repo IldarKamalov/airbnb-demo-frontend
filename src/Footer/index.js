@@ -1,20 +1,22 @@
 import React from 'react';
 import {
   Footer,
-  Top,
   Title,
   Link,
+  Top,
   Bottom,
   Nav,
   Logo,
   Img,
   Copy,
-} from './Footer/styled';
-import logo from './Footer/logo.svg';
-import twitter from './Footer/twitter.svg';
-import facebook from './Footer/facebook.svg';
-import instagram from './Footer/instagram.svg';
-import Select from './elements/Select';
+  BottomLink,
+  IconLink,
+} from './styled';
+import logo from './logo.svg';
+import twitter from './twitter.svg';
+import facebook from './facebook.svg';
+import instagram from './instagram.svg';
+import Select from '../elements/Select';
 
 export default function () {
   return (
@@ -78,18 +80,18 @@ export default function () {
             © Airbnb Inc.
           </Copy>
           <Nav>
-            <Link bottom href="#!">Terms</Link>
-            <Link bottom href="#!">Privacy</Link>
-            <Link bottom href="#!">Site map</Link>
-            <Link iconLink href="#!">
+            <BottomLink href="#!">Terms</BottomLink>
+            <BottomLink href="#!">Privacy</BottomLink>
+            <BottomLink href="#!">Site map</BottomLink>
+            <IconLink href="#!">
               <Img src={facebook} />
-            </Link>
-            <Link iconLink href="#!">
+            </IconLink>
+            <IconLink href="#!">
               <Img src={twitter} />
-            </Link>
-            <Link iconLink href="#!">
+            </IconLink>
+            <IconLink href="#!">
               <Img src={instagram} />
-            </Link>
+            </IconLink>
           </Nav>
         </Bottom>
       </div>
