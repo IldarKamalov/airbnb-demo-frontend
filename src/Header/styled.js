@@ -14,10 +14,11 @@ export const Inner = styled.div`
 export const Logo = styled.button`
   position: relative;
   display: block;
-  margin-right: 20px;
-  padding: 0 20px 0 0;
-  border: 0;
+  margin-right: 10px;
+  padding: 0 15px 0 0;
   background: transparent;
+  border: 0;
+  outline: 0;
 
   &:after {
     content: "";
@@ -32,7 +33,12 @@ export const Logo = styled.button`
     opacity: 0.8;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+    padding: 0 20px 0 0;
+  }
+
+  @media screen and (min-width: 992px) {
     &:after {
       display: none;
     }
@@ -50,27 +56,40 @@ export const Search = styled.form`
   align-items: center;
   width: 392px;
   height: 48px;
-  padding: 14px 16px;
+  padding: 14px 12px;
   box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.08);
   border: solid 1px rgba(72, 72, 72, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 16px;
+  }
 `;
 
 export const SearchIcon = styled.img`
   display: block;
-  max-width: 20px;
+  max-width: 15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 20px;
+  }
 `;
 
 export const SearchInput = styled.input`
   display: block;
   width: 100%;
   height: 24px;
-  padding: 0 15px;
+  padding: 0 10px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #383838;
   border: 0;
   outline: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 15px;
+    font-size: 16px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -78,7 +97,7 @@ export const Nav = styled.nav`
   margin-left: auto;
   text-align: right;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     display: block;
   }
 `;
@@ -99,3 +118,5 @@ export const Link = styled.a`
     margin-right: 0;
   }
 `;
+
+export default Header;

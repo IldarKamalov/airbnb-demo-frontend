@@ -30,8 +30,15 @@ export const Select = styled.select`
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 40px 0 15px;
+    padding: 0 30px 0 10px;
     height: 48px;
+    font-size: 15px;
+    background-position: right 10px bottom 18px;
+    background-size: 13px 9px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0 40px 0 15px;
     font-size: 18px;
     background-position: right 14px bottom 18px;
     background-size: 15px 10px;

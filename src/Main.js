@@ -1,12 +1,5 @@
 import React from 'react';
-import {Content, Section, Title, All} from './Main/styled';
-import Rating from './elements/Rating';
-import {
-  Category,
-  CategoryImg,
-  CategoryTitle,
-  CategoryDescription,
-} from './elements/Category';
+import Content from './Main/styled';
 import Explore from './Main/Explore';
 import Experiences from './Main/Experiences';
 import Homes from './Main/Homes';

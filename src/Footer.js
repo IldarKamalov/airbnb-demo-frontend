@@ -9,7 +9,6 @@ import {
   Logo,
   Img,
   Copy,
-  Wrap,
 } from './Footer/styled';
 import logo from './Footer/logo.svg';
 import twitter from './Footer/twitter.svg';
@@ -23,7 +22,7 @@ export default function () {
       <div className="container">
         <Top>
           <div className="row">
-            <div className="col-xs-12 col-md-4">
+            <div className="col-xs-12 col-md-3 col-lg-4">
               <div className="row">
                 <div className="col-xs-6 col-sm-6 col-md-12">
                   <Select>
@@ -39,7 +38,7 @@ export default function () {
                 </div>
               </div>
             </div>
-            <div className="col-md-3 hidden-xs hidden-sm">
+            <div className="hidden-xs hidden-sm col-md-offset-1 col-lg-offset-0 col-md-3 col-lg-3">
               <Title>
                 Airbnb
               </Title>
@@ -50,7 +49,7 @@ export default function () {
               <Link href="#!">Help</Link>
               <Link href="#!">Diversity & Belonging</Link>
             </div>
-            <div className="col-md-3 hidden-xs hidden-sm">
+            <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
               <Title>
                 Discover
               </Title>
@@ -62,7 +61,7 @@ export default function () {
               <Link href="#!">Guidebooks</Link>
               <Link href="#!">Airbnbmag</Link>
             </div>
-            <div className="col-md-2 hidden-xs hidden-sm">
+            <div className="hidden-xs hidden-sm col-md-2 col-lg-2">
               <Title>
                 Hosting
               </Title>

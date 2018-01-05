@@ -1,16 +1,20 @@
 import styled, {css} from 'styled-components';
 
-export const Card = styled.div`
+export const Card = styled.a`
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  text-decoration: none;
 `;
 
 export const CardImg = styled.img`
   display: block;
+  width: 100%;
   max-width: 100%;
   margin-bottom: 8px;
 `;
 
 export const CardTitle = styled.div`
-  max-width: 230px;
   margin-bottom: 3px;
   font-size: 15px;
   font-weight: ${props => (props.light ? '300' : '700')};
@@ -20,6 +24,12 @@ export const CardTitle = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+
+  ${props => props.ellipsis && css`
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  `}
 `;
 
 export const CardSubtitle = styled.div`
@@ -61,6 +71,8 @@ export const CardDescription = styled.div`
   `}
 `;
 
-export const CardDivider = styled.span``;
+export const CardDivider = styled.span`
+  padding: 0 5px;
+`;
 
 export default Card;

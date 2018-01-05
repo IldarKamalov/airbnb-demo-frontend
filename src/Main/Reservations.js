@@ -1,17 +1,14 @@
 import React from 'react';
-import {Content, Section, Title, All} from './styled';
+import {Section, Title, All, Row, Cards} from './styled';
 
 import {
   Card,
   CardImg,
   CardTitle,
   CardSubtitle,
-  CardPrice,
-  CardRating,
-  CardReview,
-  CardDivider,
   CardDescription,
 } from '../elements/Card';
+import SliderArrow from '../elements/SliderArrow';
 
 import chumleyImage from './reservations/chumley.png';
 import chumleyImage2x from './reservations/chumley@2x.png';
@@ -29,80 +26,83 @@ export default function Reservations () {
         Popular reservations around the world
         <All href="#!">See all</All>
       </Title>
-      <div className="row row--overflow">
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
-            <CardImg
-              src={chumleyImage}
-              srcSet={chumleyImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardSubtitle>
-              Speakeasy
-            </CardSubtitle>
-            <CardTitle>
-              Chumley’s
-            </CardTitle>
-            <CardDescription price>
-              About $60 per person
-            </CardDescription>
-          </Card>
-        </div>
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
-            <CardImg
-              src={hanjanImage}
-              srcSet={hanjanImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardSubtitle>
-              Korean gastropub
-            </CardSubtitle>
-            <CardTitle>
-              Hanjan
-            </CardTitle>
-            <CardDescription price>
-              About $50 per person
-            </CardDescription>
-          </Card>
-        </div>
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
-            <CardImg
-              src={primeImage}
-              srcSet={primeImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardSubtitle>
-              German american
-            </CardSubtitle>
-            <CardTitle>
-              Prime Meats
-            </CardTitle>
-            <CardDescription price>
-              About $55 per person
-            </CardDescription>
-          </Card>
-        </div>
-        <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
-            <CardImg
-              src={seapriceImage}
-              srcSet={seapriceImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardSubtitle>
-              Fine seafood
-            </CardSubtitle>
-            <CardTitle>
-              Seaprice
-            </CardTitle>
-            <CardDescription price>
-              About $70 per person
-            </CardDescription>
-          </Card>
-        </div>
-      </div>
+      <Cards>
+        <SliderArrow />
+        <Row scroll>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <Card>
+              <CardImg
+                src={chumleyImage}
+                srcSet={chumleyImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardSubtitle>
+                Speakeasy
+              </CardSubtitle>
+              <CardTitle>
+                Chumley’s
+              </CardTitle>
+              <CardDescription price>
+                About $60 per person
+              </CardDescription>
+            </Card>
+          </div>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <Card>
+              <CardImg
+                src={hanjanImage}
+                srcSet={hanjanImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardSubtitle>
+                Korean gastropub
+              </CardSubtitle>
+              <CardTitle>
+                Hanjan
+              </CardTitle>
+              <CardDescription price>
+                About $50 per person
+              </CardDescription>
+            </Card>
+          </div>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <Card>
+              <CardImg
+                src={primeImage}
+                srcSet={primeImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardSubtitle>
+                German american
+              </CardSubtitle>
+              <CardTitle>
+                Prime Meats
+              </CardTitle>
+              <CardDescription price>
+                About $55 per person
+              </CardDescription>
+            </Card>
+          </div>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <Card>
+              <CardImg
+                src={seapriceImage}
+                srcSet={seapriceImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardSubtitle>
+                Fine seafood
+              </CardSubtitle>
+              <CardTitle>
+                Seaprice
+              </CardTitle>
+              <CardDescription price>
+                About $70 per person
+              </CardDescription>
+            </Card>
+          </div>
+        </Row>
+      </Cards>
     </Section>
   );
 }

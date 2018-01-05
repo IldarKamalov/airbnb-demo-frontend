@@ -31,16 +31,21 @@ export const Column = styled.div`
 
 export const Title = styled.div`
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   color: #383838;
+
+  @media screen and (min-width: 992px) {
+    font-size: 15px;
+  }
 `;
 
 export const Link = styled.a`
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 12px;
   text-decoration: none;
+  line-height: 1.4;
   color: #636363;
 
   &:hover,
@@ -60,7 +65,7 @@ export const Link = styled.a`
     }
   `}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     font-size: 15px;
   }
 `;
@@ -96,17 +101,10 @@ export const Copy = styled.span`
   font-size: 12px;
   color: #636363;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     margin-bottom: 0;
     font-size: 15px;
   }
 `;
 
-export const Wrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-`;
+export default Footer;

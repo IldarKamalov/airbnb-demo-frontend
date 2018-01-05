@@ -5,8 +5,8 @@ export const Rating = styled.div`
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 91px;
-  height: 18px;
+  width: 60px;
+  height: 12px;
   background-image: url("${star}");
   background-repeat: repeat-x;
   background-position: center;
@@ -16,7 +16,7 @@ export const Rating = styled.div`
       position: absolute;
       top: 0;
       right: 0;
-      height: 18px;
+      height: 12px;
       background-color: #fff;
   }
 
@@ -28,25 +28,25 @@ export const Rating = styled.div`
 
   ${props => props.four && css`
     &:after {
-        width: 18px;
+        width: 12px;
     }
   `}
 
   ${props => props.three && css`
     &:after {
-        width: 36px;
+        width: 24px;
     }
   `}
 
   ${props => props.two && css`
     &:after {
-        width: 54px;
+        width: 36px;
     }
   `}
 
   ${props => props.one && css`
     &:after {
-        width: 72px;
+        width: 48px;
     }
   `}
 `;

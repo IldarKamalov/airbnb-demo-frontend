@@ -1,6 +1,7 @@
 import React from 'react';
-import {Content, Section, Title, All} from './styled';
+import {Section, Title, Row, Cards} from './styled';
 import {Card, CardImg, CardTitle} from '../elements/Card';
+import SliderArrow from '../elements/SliderArrow';
 
 import capeTownImage from './destinations/capeTown.png';
 import capeTownImage2x from './destinations/capeTown@2x.png';
@@ -21,68 +22,71 @@ export default function () {
       <Title>
         Featured destinations
       </Title>
-      <div className="row row--overflow">
-        <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
-            <CardImg
-              src={parisImage}
-              srcSet={parisImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Paris</CardTitle>
-          </Card>
-        </div>
-        <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
-            <CardImg
-              src={miamiImage}
-              srcSet={miamiImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Miami</CardTitle>
-          </Card>
-        </div>
-        <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
-            <CardImg
-              src={tokyoImage}
-              srcSet={tokyoImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Tokyo</CardTitle>
-          </Card>
-        </div>
-        <div className="col-xs-4 col-sm-3 col-md-2">
-          <Card>
-            <CardImg
-              src={capeTownImage}
-              srcSet={capeTownImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Cape town</CardTitle>
-          </Card>
-        </div>
-        <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
-            <CardImg
-              src={seoulImage}
-              srcSet={seoulImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Seoul</CardTitle>
-          </Card>
-        </div>
-        <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
-            <CardImg
-              src={losAngelesImage}
-              srcSet={losAngelesImage2x + ' 2x'}
-              alt="main"
-            />
-            <CardTitle bold small>Los Angeles</CardTitle>
-          </Card>
-        </div>
-      </div>
+      <Cards>
+        <SliderArrow destinations />
+        <Row scroll>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={parisImage}
+                srcSet={parisImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Paris</CardTitle>
+            </Card>
+          </div>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={miamiImage}
+                srcSet={miamiImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Miami</CardTitle>
+            </Card>
+          </div>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={tokyoImage}
+                srcSet={tokyoImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Tokyo</CardTitle>
+            </Card>
+          </div>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={capeTownImage}
+                srcSet={capeTownImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Cape town</CardTitle>
+            </Card>
+          </div>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={seoulImage}
+                srcSet={seoulImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Seoul</CardTitle>
+            </Card>
+          </div>
+          <div className="col-sm-4 col-md-3 col-lg-2">
+            <Card>
+              <CardImg
+                src={losAngelesImage}
+                srcSet={losAngelesImage2x + ' 2x'}
+                alt="main"
+              />
+              <CardTitle bold small>Los Angeles</CardTitle>
+            </Card>
+          </div>
+        </Row>
+      </Cards>
     </Section>
   );
 }

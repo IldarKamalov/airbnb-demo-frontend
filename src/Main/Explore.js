@@ -1,6 +1,5 @@
 import React from 'react';
-import {Content, Section, Title} from './styled';
-import Rating from '../elements/Rating';
+import {Section, Title, Row} from './styled';
 import {
   Category,
   CategoryImg,
@@ -21,7 +20,7 @@ export default function Explore () {
       <Title>
         Explore Airbnb
       </Title>
-      <div className="row row--overflow">
+      <Row scroll>
         <div className="col-xs col-sm col-md-5 col-lg-4">
           <Category>
             <CategoryImg
@@ -58,7 +57,7 @@ export default function Explore () {
             </CategoryDescription>
           </Category>
         </div>
-      </div>
+      </Row>
     </Section>
   );
 }

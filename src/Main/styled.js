@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import chevron from '../elements/chevron.svg';
 
 export const Content = styled.div`
@@ -6,6 +6,7 @@ export const Content = styled.div`
 `;
 
 export const Section = styled.div`
+  position: relative;
   margin-bottom: 40px;
 
   &:last-child {
@@ -54,3 +55,22 @@ export const All = styled.a`
     transform: rotate(-90deg);
   }
 `;
+
+export const Row = styled.div`
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+
+  ${props => props.scroll && css`
+    flex-wrap: nowrap;
+    padding: 5px 0;
+    overflow-y: auto;
+  `}
+`;
+
+export const Cards = styled.div``;
+
+export default Content;

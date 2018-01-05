@@ -38,10 +38,3 @@ body {
       max-width: 100%;
   }
 }
-
-/* TODO remove after slider implementation */
-.row--overflow {
-  flex-wrap: nowrap;
-  padding: 5px 0;
-  overflow-y: auto;
-}
