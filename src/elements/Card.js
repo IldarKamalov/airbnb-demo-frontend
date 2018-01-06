@@ -38,7 +38,7 @@ export const Subtitle = styled.p`
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
-	color: #383838;
+  color: #383838;
 `;
 
 export const Price = styled.strong`
@@ -47,7 +47,7 @@ export const Price = styled.strong`
 `;
 
 export const Rating = styled.div`
-	display: flex;
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
 `;
