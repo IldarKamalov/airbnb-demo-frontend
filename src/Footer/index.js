@@ -9,7 +9,7 @@ import {
   Logo,
   Img,
   Copy,
-  BottomLink,
+  InlineLink,
   IconLink,
 } from './styled';
 import logo from './logo.svg';
@@ -80,9 +80,9 @@ export default function () {
             © Airbnb Inc.
           </Copy>
           <Nav>
-            <BottomLink href="#!">Terms</BottomLink>
-            <BottomLink href="#!">Privacy</BottomLink>
-            <BottomLink href="#!">Site map</BottomLink>
+            <InlineLink href="#!">Terms</InlineLink>
+            <InlineLink href="#!">Privacy</InlineLink>
+            <InlineLink href="#!">Site map</InlineLink>
             <IconLink href="#!">
               <Img src={facebook} />
             </IconLink>

@@ -58,7 +58,9 @@ export const Link = styled.a`
   }
 `;
 
-export const BottomLink = Link.extend`
+export const InlineLink = Link.extend`
+  display: inline-block;
+  vertical-align: middle;
   margin: 0 15px 0 0;
 `;
 

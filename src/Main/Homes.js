@@ -1,5 +1,5 @@
 import React from 'react';
-import {Section, Title, All, Scroll} from './styled';
+import { Section, Title, All, Scroll } from './styled';
 
 import {
   Card,
@@ -31,7 +31,7 @@ export default function Homes () {
       <SliderArrow />
       <Scroll>
         <div className="col-sm-8 col-md-5 col-lg-4">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={firstHomeImage}
               srcSet={firstHomeImage2x + ' 2x'}
@@ -57,7 +57,7 @@ export default function Homes () {
           </Card>
         </div>
         <div className="col-sm-8 col-md-5 col-lg-4">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={secondHomeImage}
               srcSet={secondHomeImage2x + ' 2x'}
@@ -83,7 +83,7 @@ export default function Homes () {
           </Card>
         </div>
         <div className="col-sm-8 col-md-5 col-lg-4">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={thirdHomeImage}
               srcSet={thirdHomeImage2x + ' 2x'}

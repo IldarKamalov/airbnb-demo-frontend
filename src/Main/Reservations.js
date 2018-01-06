@@ -1,5 +1,5 @@
 import React from 'react';
-import {Section, Title, All, Scroll} from './styled';
+import { Section, Title, All, Scroll } from './styled';
 
 import {
   Card,
@@ -29,7 +29,7 @@ export default function Reservations () {
       <SliderArrow />
       <Scroll>
         <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={chumleyImage}
               srcSet={chumleyImage2x + ' 2x'}
@@ -47,7 +47,7 @@ export default function Reservations () {
           </Card>
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={hanjanImage}
               srcSet={hanjanImage2x + ' 2x'}
@@ -65,7 +65,7 @@ export default function Reservations () {
           </Card>
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={primeImage}
               srcSet={primeImage2x + ' 2x'}
@@ -83,7 +83,7 @@ export default function Reservations () {
           </Card>
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={seapriceImage}
               srcSet={seapriceImage2x + ' 2x'}

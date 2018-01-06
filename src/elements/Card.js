@@ -5,6 +5,7 @@ export const Card = styled.a`
   margin: 0 auto;
   max-width: 100%;
   text-decoration: none;
+  color: #383838;
 `;
 
 export const Img = styled.img`
@@ -14,8 +15,8 @@ export const Img = styled.img`
   margin-bottom: 8px;
 `;
 
-export const Title = styled.div`
-  margin-bottom: 3px;
+export const Title = styled.p`
+  margin: 0 0 3px 0;
   font-size: 15px;
   font-weight: ${props => (props.light ? '300' : '700')};
   line-height: 1.4;
@@ -32,8 +33,8 @@ export const Title = styled.div`
   `}
 `;
 
-export const Subtitle = styled.div`
-  margin-bottom: 2px;
+export const Subtitle = styled.p`
+  margin: 0 0 2px 0;
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
@@ -51,7 +52,7 @@ export const Rating = styled.div`
   align-items: center;
 `;
 
-export const Review = styled.div`
+export const Review = styled.span`
   margin-left: 6px;
   font-size: 12px;
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Section, Title, Scroll} from './styled';
+import { Section, Title, Scroll } from './styled';
 
 import homeImage from './explore/home.png';
 import homeImage2x from './explore/home@2x.png';
@@ -9,11 +9,11 @@ import experiencesImage2x from './explore/experiences@2x.png';
 import restaurantsImage from './explore/restaurants.png';
 import restaurantsImage2x from './explore/restaurants@2x.png';
 
-const Category = styled.div`
+const Category = styled.a`
   display: flex;
   flex-direction: column;
-  flex: 0 0 auto;
-  width: 144px;
+  text-decoration: none;
+  color: #383838;
   box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.08);
 
   @media screen and (min-width: 768px) {
@@ -52,8 +52,9 @@ const Wrap = styled.div`
   }
 `;
 
-const Name = styled.div`
+const Name = styled.p`
   width: 100%;
+  margin: 0;
   padding: 12px 12px 13px 12px;
 
   @media screen and (min-width: 768px) {
@@ -68,16 +69,16 @@ export default function Explore () {
         Explore Airbnb
       </Title>
       <Scroll>
-        <div className="col-xs col-sm col-md-5 col-lg-4">
-          <Category>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Category href="#!">
             <Img src={homeImage} srcSet={homeImage2x + ' 2x'} alt="main" />
             <Wrap>
               <Name>Homes</Name>
             </Wrap>
           </Category>
         </div>
-        <div className="col-xs col-sm col-md-5 col-lg-4">
-          <Category>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Category href="#!">
             <Img
               src={experiencesImage}
               srcSet={experiencesImage2x + ' 2x'}
@@ -88,8 +89,8 @@ export default function Explore () {
             </Wrap>
           </Category>
         </div>
-        <div className="col-xs col-sm col-md-5 col-lg-4">
-          <Category>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Category href="#!">
             <Img
               src={restaurantsImage}
               srcSet={restaurantsImage2x + ' 2x'}

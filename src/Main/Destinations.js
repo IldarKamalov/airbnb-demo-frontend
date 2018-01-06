@@ -1,6 +1,6 @@
 import React from 'react';
-import {Section, Title, Scroll} from './styled';
-import {Card, Img as CardImg, Title as CardTitle} from '../elements/Card';
+import { Section, Title, Scroll } from './styled';
+import { Card, Img as CardImg, Title as CardTitle } from '../elements/Card';
 import SliderArrow from '../elements/SliderArrow';
 
 import capeTownImage from './destinations/capeTown.png';
@@ -29,7 +29,7 @@ export default function () {
       <DestinationsArrow />
       <Scroll>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={parisImage}
               srcSet={parisImage2x + ' 2x'}
@@ -39,7 +39,7 @@ export default function () {
           </Card>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={miamiImage}
               srcSet={miamiImage2x + ' 2x'}
@@ -49,7 +49,7 @@ export default function () {
           </Card>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={tokyoImage}
               srcSet={tokyoImage2x + ' 2x'}
@@ -59,7 +59,7 @@ export default function () {
           </Card>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={capeTownImage}
               srcSet={capeTownImage2x + ' 2x'}
@@ -69,7 +69,7 @@ export default function () {
           </Card>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={seoulImage}
               srcSet={seoulImage2x + ' 2x'}
@@ -79,7 +79,7 @@ export default function () {
           </Card>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
-          <Card>
+          <Card href="#!">
             <CardImg
               src={losAngelesImage}
               srcSet={losAngelesImage2x + ' 2x'}
