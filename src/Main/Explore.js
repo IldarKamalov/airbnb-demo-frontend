@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Section, Title, Row} from './styled';
+import {Section, Title, Scroll} from './styled';
 
 import homeImage from './explore/home.png';
 import homeImage2x from './explore/home@2x.png';
@@ -67,7 +67,7 @@ export default function Explore () {
       <Title>
         Explore Airbnb
       </Title>
-      <Row scroll>
+      <Scroll>
         <div className="col-xs col-sm col-md-5 col-lg-4">
           <Category>
             <Img src={homeImage} srcSet={homeImage2x + ' 2x'} alt="main" />
@@ -100,7 +100,7 @@ export default function Explore () {
             </Wrap>
           </Category>
         </div>
-      </Row>
+      </Scroll>
     </Section>
   );
 }

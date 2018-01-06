@@ -1,5 +1,5 @@
 import React from 'react';
-import {Section, Title, All, Row} from './styled';
+import {Section, Title, All, Scroll} from './styled';
 
 import {
   Card,
@@ -29,7 +29,7 @@ export default function Homes () {
         <All href="#!">See all</All>
       </Title>
       <SliderArrow />
-      <Row scroll>
+      <Scroll>
         <div className="col-sm-8 col-md-5 col-lg-4">
           <Card>
             <CardImg
@@ -108,7 +108,7 @@ export default function Homes () {
             </CardRating>
           </Card>
         </div>
-      </Row>
+      </Scroll>
     </Section>
   );
 }

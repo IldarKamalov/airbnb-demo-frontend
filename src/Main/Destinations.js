@@ -1,5 +1,5 @@
 import React from 'react';
-import {Section, Title, Row} from './styled';
+import {Section, Title, Scroll} from './styled';
 import {Card, Img as CardImg, Title as CardTitle} from '../elements/Card';
 import SliderArrow from '../elements/SliderArrow';
 
@@ -27,7 +27,7 @@ export default function () {
         Featured destinations
       </Title>
       <DestinationsArrow />
-      <Row scroll>
+      <Scroll>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card>
             <CardImg
@@ -88,7 +88,7 @@ export default function () {
             <CardTitle bold small>Los Angeles</CardTitle>
           </Card>
         </div>
-      </Row>
+      </Scroll>
     </Section>
   );
 }

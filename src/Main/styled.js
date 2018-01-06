@@ -57,19 +57,14 @@ export const All = styled.a`
   }
 `;
 
-export const Row = styled.div`
+export const Scroll = styled.div`
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -8px;
-
-  ${props => props.scroll && `
-    flex-wrap: nowrap;
-    padding: 5px 0;
-    overflow-y: auto;
-  `}
+  flex-wrap: nowrap;
+  margin: 0 -8px;
+  padding: 5px 0;
+  overflow-y: auto;
 `;
 
 export default Content;
