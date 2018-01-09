@@ -8,7 +8,7 @@ import {
   SearchIcon,
   SearchInput,
   Nav,
-  Link,
+  InlineLink,
 } from './styled';
 import logo from './colorLogo.svg';
 import icon from './searchIcon.svg';
@@ -18,7 +18,7 @@ export default function () {
     <Header>
       <div className="container">
         <Inner>
-          <Logo type="button">
+          <Logo to="/">
             <LogoImage src={logo} />
           </Logo>
 
@@ -28,10 +28,10 @@ export default function () {
           </Search>
 
           <Nav>
-            <Link href="/become-a-host">Become a host</Link>
-            <Link href="/help">Help</Link>
-            <Link href="/sign-up">Sign Up</Link>
-            <Link href="/login">Login</Link>
+            <InlineLink to="/become-a-host">Become a host</InlineLink>
+            <InlineLink to="/help">Help</InlineLink>
+            <InlineLink to="/sign-up">Sign Up</InlineLink>
+            <InlineLink to="/login">Login</InlineLink>
           </Nav>
         </Inner>
       </div>

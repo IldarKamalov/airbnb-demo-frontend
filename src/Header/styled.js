@@ -1,8 +1,15 @@
 import styled from 'styled-components';
-import chevron from '../elements/chevron.svg';
+import { Link } from 'react-router-dom';
+import chevron from '../UI/chevron.svg';
 
 export const Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
   box-shadow: 0 0.5px 0 0 rgba(72, 72, 72, 0.3);
+  z-index: 2;
 `;
 
 export const Inner = styled.div`
@@ -11,14 +18,11 @@ export const Inner = styled.div`
   height: 80px;
 `;
 
-export const Logo = styled.button`
+export const Logo = styled(Link)`
   position: relative;
   display: block;
   margin-right: 10px;
   padding: 0 15px 0 0;
-  background: transparent;
-  border: 0;
-  outline: 0;
 
   &:after {
     content: "";
@@ -102,7 +106,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Link = styled.a`
+export const InlineLink = styled(Link)`
   margin-right: 8px;
   padding: 8px;
   text-decoration: none;
