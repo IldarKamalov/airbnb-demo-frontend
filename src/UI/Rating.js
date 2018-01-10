@@ -5,18 +5,17 @@ export const Rating = styled.div`
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 60px;
+  width: 76px;
   height: 12px;
-  background-image: url("${star}");
-  background-repeat: repeat-x;
-  background-position: center;
+  background: url("${star}") repeat-x center;
+  background-size: 16px 12px;
 
   &:after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    height: 12px;
+    height: 11px;
     background-color: #fff;
   }
 

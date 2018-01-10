@@ -1,6 +1,9 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Stars from '../../UI/Rating';
 
-export const Card = styled.a`
+export const Card = styled(Link)`
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -18,27 +21,16 @@ export const Img = styled.img`
 export const Title = styled.p`
   margin: 0 0 3px 0;
   font-size: 15px;
-  font-weight: ${props => (props.light ? '300' : '700')};
+  font-weight: 300;
   line-height: 1.4;
+  text-overflow: ellipsis;
   color: #383838;
+  white-space: nowrap;
+  overflow: hidden;
   
   &:last-child {
     margin-bottom: 0;
   }
-
-  ${props => props.ellipsis && `
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  `}
-`;
-
-export const Subtitle = styled.p`
-  margin: 0 0 2px 0;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #383838;
 `;
 
 export const Price = styled.strong`
@@ -57,21 +49,20 @@ export const Review = styled.span`
   font-size: 12px;
 `;
 
-export const Description = styled.p`
-  margin: 0 0 5px 0;
-  font-size: 15px;
-  font-weight: 300;
-
-  ${props => props.price && `
-    margin: 0;
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0.9;
-  `}
-`;
-
-export const Divider = styled.span`
-  padding: 0 5px;
-`;
-
-export default Card;
+export default props => (
+  <Card to={props.href}>
+    <Img src={props.img} srcSet={`${props.img2x} 2x`} alt="homes" />
+    <Title>
+      <Price>
+        {props.price}
+      </Price>
+      {props.title}
+    </Title>
+    <Rating>
+      <Stars five />
+      <Review>
+        {props.reviewsCount}
+      </Review>
+    </Rating>
+  </Card>
+);

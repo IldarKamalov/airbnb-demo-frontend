@@ -12,7 +12,7 @@ export const SliderArrow = styled.button`
   background: #fff url(${chevron}) no-repeat center;
   background-size: 17px 10px;
   box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.16);
-  border: solid 0.5px rgba(72, 72, 72, 0.2);
+  border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 50%;
   outline: 0;
   transform: rotate(-90deg);

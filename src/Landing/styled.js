@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import chevron from '../elements/chevron.svg';
+import { Link } from 'react-router-dom';
+import chevron from '../UI/chevron.svg';
 
 export const Content = styled.div`
-  padding: 45px 0 60px;
+  padding: 125px 0 60px;
 `;
 
 export const Section = styled.div`
@@ -29,7 +30,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const All = styled.a`
+export const All = styled(Link)`
   margin-left: 5px;
   font-size: 14px;
   font-weight: normal;
