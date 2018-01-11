@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
 import styled from 'styled-components';
 import locationIcon from './location.svg';
 
-const Location = styled.button`
+export const Location = styled.button`
   position: fixed;
   right: 10px;
   bottom: 25px;
@@ -20,8 +19,4 @@ const Location = styled.button`
   }
 `;
 
-export default class ShowMap extends Component {
-  render () {
-    return <Location />;
-  }
-}
+export default Location;

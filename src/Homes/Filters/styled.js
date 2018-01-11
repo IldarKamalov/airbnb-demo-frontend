@@ -14,7 +14,7 @@ export const Wrap = styled.div`
   z-index: 2;
 `;
 
-export const FiltersButton = Button.extend`
+export const Filter = Button.extend`
   margin-right: 10px;
   outline: 0;
   cursor: pointer;

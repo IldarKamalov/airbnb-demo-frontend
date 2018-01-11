@@ -47,11 +47,11 @@ export const Review = styled.span`
 `;
 
 export default props => (
-  <Card to={props.href}>
+  <Card to={props.to}>
     <Img src={props.img} srcSet={`${props.img2x} 2x`} alt="homes" />
     <Title>
       <Price>
-        {props.price}
+        ${props.price}
       </Price>
       {props.title}
     </Title>

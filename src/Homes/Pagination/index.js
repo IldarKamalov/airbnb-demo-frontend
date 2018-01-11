@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrow from './arrow.svg';
@@ -44,24 +44,22 @@ const Total = styled.p`
   color: #383838;
 `;
 
-export default class Pagination extends Component {
-  render () {
-    return (
-      <div>
-        <Wrap>
-          <Pages>
-            <Number to="/homes" current="true">1</Number>
-            <Number to="/homes">2</Number>
-            <Number to="/homes">3</Number>
-            <Number to="/homes">...</Number>
-            <Number to="/homes">17</Number>
-            <Next to="/homes" />
-          </Pages>
-          <Total>
-            1 – 18 of 300+ Rentals
-          </Total>
-        </Wrap>
-      </div>
-    );
-  }
+export default props => {
+  return (
+    <div>
+      <Wrap>
+        <Pages>
+          <Number to="/homes" current>1</Number>
+          <Number to="/homes">2</Number>
+          <Number to="/homes">3</Number>
+          <Number to="/homes">...</Number>
+          <Number to="/homes">17</Number>
+          <Next to="/homes" />
+        </Pages>
+        <Total>
+          1 – 18 of 300+ Rentals
+        </Total>
+      </Wrap>
+    </div>
+  );
 }

@@ -24,40 +24,40 @@ export default function Experiences () {
       <Scroll>
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={forestImage}
             img2x={forestImage2x}
-            price="$29"
+            price={29}
             title="Forest therapy"
             reviewsCount="44 reviews"
           />
         </div>
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={whaleImage}
             img2x={whaleImage2x}
-            price="$69"
+            price={69}
             title="Whale watching"
             reviewsCount="46 reviews"
           />
         </div>
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={mountainImage}
             img2x={mountainImage2x}
-            price="$69"
+            price={69}
             title="Table Mountain Summit, Cable Car Down"
             reviewsCount="44 reviews"
           />
         </div>
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={salsaImage}
             img2x={salsaImage2x}
-            price="$50"
+            price={50}
             title="Salsa Night"
             reviewsCount="44 reviews"
           />

@@ -24,7 +24,7 @@ export default function Reservations () {
       <Scroll>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={chumleyImage}
             img2x={chumleyImage2x}
             title="Chumley’s"
@@ -34,7 +34,7 @@ export default function Reservations () {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={hanjanImage}
             img2x={hanjanImage2x}
             title="Hanjan"
@@ -44,7 +44,7 @@ export default function Reservations () {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={primeImage}
             img2x={primeImage2x}
             title="Prime Meats"
@@ -54,7 +54,7 @@ export default function Reservations () {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <Card
-            href="/"
+            to="/"
             img={seapriceImage}
             img2x={seapriceImage2x}
             title="Seaprice"

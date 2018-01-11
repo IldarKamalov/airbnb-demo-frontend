@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import { DayPickerRangeController } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import styled from 'styled-components';
-import { FiltersButton } from './styled.js';
+import { Filter } from './styled.js';
 
 const Dates = styled.div`
   position: relative;
@@ -23,7 +23,7 @@ const Content = styled.div`
 `;
 
 const Actions = styled.div`
-  display: none;
+  display: flex;
   justify-content: space-between;
   margin-top: auto;
   padding: 25px;
@@ -60,10 +60,11 @@ export default class Dropdown extends Component {
   render () {
     return (
       <Dates>
-        <FiltersButton onClick={this.toggleOpen}>Dates</FiltersButton>
+        <Filter onClick={this.toggleOpen}>Dates</Filter>
         {this.state.isOpen &&
           <Content>
             <DayPickerRangeController
+              noBorder
               hideKeyboardShortcutsPanel
               numberOfMonths={2}
               onPrevMonthClick={this.onPrevMonthClick}

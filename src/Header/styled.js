@@ -38,11 +38,14 @@ export const Logo = styled(Link)`
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: 20px;
-    padding: 0 20px 0 0;
+    margin-right: 17px;
+    padding: 0 17px 0 0;
   }
 
   @media screen and (min-width: 992px) {
+    margin-right: 25px;
+    padding: 0 25px 0 0;
+
     &:after {
       display: none;
     }
@@ -107,8 +110,8 @@ export const Nav = styled.nav`
 `;
 
 export const InlineLink = styled(Link)`
-  margin-right: 8px;
-  padding: 8px;
+  margin-right: 10px;
+  padding: 8px 10px;
   text-decoration: none;
   color: #383838;
   border-bottom: 2px solid transparent;

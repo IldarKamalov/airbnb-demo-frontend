@@ -33,7 +33,7 @@ export const Title = styled.p`
 `;
 
 export default props => (
-  <Card to={props.href}>
+  <Card to={props.to}>
     <Img src={props.img} srcSet={`${props.img2x} 2x`} alt="reservations" />
     <Title>
       {props.title}

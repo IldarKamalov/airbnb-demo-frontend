@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrap, FiltersButton } from './styled';
+import { Wrap, Filter } from './styled';
 import Dates from './Dates';
 
 export default class Filters extends Component {
@@ -8,19 +8,21 @@ export default class Filters extends Component {
       <Wrap>
         <div className="container">
           <Dates />
-          <FiltersButton type="button">
+          <Filter type="button">
             Guests
-          </FiltersButton>
-          <FiltersButton type="button" hiddenMobile>
+          </Filter>
+          <Filter type="button" hiddenMobile>
             Room type
-          </FiltersButton>
-          <FiltersButton type="button" hiddenMobile>
+          </Filter>
+          <Filter type="button" hiddenMobile>
             Price
-          </FiltersButton>
-          <FiltersButton type="button" hiddenMobile>
+          </Filter>
+          <Filter type="button" hiddenMobile>
             Instant book
-          </FiltersButton>
-          <FiltersButton type="button">More filters</FiltersButton>
+          </Filter>
+          <Filter type="button">
+            More filters
+          </Filter>
         </div>
       </Wrap>
     );

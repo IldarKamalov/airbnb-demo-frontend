@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section, Title, All, Scroll } from '../styled';
 
-import Card from './Card';
+import Card from '../../Homes/Card';
 import SliderArrow from '../../UI/SliderArrow';
 
 import firstHomeImage from './first.png';
@@ -22,10 +22,10 @@ export default function Homes () {
       <Scroll>
         <div className="col-sm-8 col-md-5 col-lg-4">
           <Card
-            href="/homes"
+            to="/homes"
             img={firstHomeImage}
             img2x={firstHomeImage2x}
-            price="$82"
+            price={82}
             title="La Salentina, see, nature & relax"
             homeType="Entire house"
             beds="9 beds"
@@ -35,10 +35,10 @@ export default function Homes () {
         </div>
         <div className="col-sm-8 col-md-5 col-lg-4">
           <Card
-            href="/homes"
+            to="/homes"
             img={secondHomeImage}
             img2x={secondHomeImage2x}
-            price="$82"
+            price={82}
             title="Your private 3 bedr. riad and exclusive something"
             homeType="Entire house"
             beds="5 beds"
@@ -48,10 +48,10 @@ export default function Homes () {
         </div>
         <div className="col-sm-8 col-md-5 col-lg-4">
           <Card
-            href="/homes"
+            to="/homes"
             img={thirdHomeImage}
             img2x={thirdHomeImage2x}
-            price="$200"
+            price={200}
             title="Dreamy Tropical Tree House"
             homeType="Entire treehouse"
             beds="1 bed"

@@ -48,7 +48,7 @@ export const Description = styled.p`
 `;
 
 export default props => (
-  <Card to={props.href}>
+  <Card to={props.to}>
     <Img src={props.img} srcSet={`${props.img2x} 2x`} alt="reservations" />
     <Subtitle>
       {props.subtitle}

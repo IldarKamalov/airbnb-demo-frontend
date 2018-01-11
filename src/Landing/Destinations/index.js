@@ -30,7 +30,7 @@ export default function () {
       <Scroll>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={parisImage}
             img2x={parisImage2x}
             title="Paris"
@@ -38,7 +38,7 @@ export default function () {
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={miamiImage}
             img2x={miamiImage2x}
             title="Miami"
@@ -46,7 +46,7 @@ export default function () {
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={tokyoImage}
             img2x={tokyoImage2x}
             title="Tokyo"
@@ -54,7 +54,7 @@ export default function () {
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={capeTownImage}
             img2x={capeTownImage2x}
             title="Cape town"
@@ -62,7 +62,7 @@ export default function () {
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={seoulImage}
             img2x={seoulImage2x}
             title="Seoul"
@@ -70,7 +70,7 @@ export default function () {
         </div>
         <div className="col-sm-4 col-md-3 col-lg-2">
           <Card
-            href="/"
+            to="/"
             img={losAngelesImage}
             img2x={losAngelesImage2x}
             title="Los Angeles"

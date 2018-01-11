@@ -18,7 +18,7 @@ export default function Explore () {
       <Scroll>
         <div className="col-xs-6 col-md-5 col-lg-4">
           <Category
-            href="/homes"
+            to="/homes"
             img={homeImage}
             img2x={homeImage2x}
             name="Homes"
@@ -26,7 +26,7 @@ export default function Explore () {
         </div>
         <div className="col-xs-6 col-md-5 col-lg-4">
           <Category
-            href="/"
+            to="/"
             img={experiencesImage}
             img2x={experiencesImage2x}
             name="Experiences"
@@ -34,7 +34,7 @@ export default function Explore () {
         </div>
         <div className="col-xs-6 col-md-5 col-lg-4">
           <Category
-            href="/"
+            to="/"
             img={restaurantsImage}
             img2x={restaurantsImage2x}
             name="Restaurants"
