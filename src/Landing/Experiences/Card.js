@@ -19,14 +19,11 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.p`
-  margin: 0 0 3px 0;
+  margin: 0 0 6px 0;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.4;
-  text-overflow: ellipsis;
   color: #383838;
-  white-space: nowrap;
-  overflow: hidden;
   
   &:last-child {
     margin-bottom: 0;

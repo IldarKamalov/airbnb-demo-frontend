@@ -49,6 +49,8 @@ export const Name = styled.p`
   width: 100%;
   margin: 0;
   padding: 12px 12px 13px 12px;
+  font-size: 17px;
+  font-weight: bold;
 
   @media screen and (min-width: 768px) {
     padding-left: 24px;

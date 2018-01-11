@@ -18,8 +18,8 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.p`
-  margin: 0 0 3px 0;
-  font-size: 15px;
+  margin: 0 0 4px 0;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
   text-overflow: ellipsis;

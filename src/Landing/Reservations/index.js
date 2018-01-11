@@ -27,7 +27,7 @@ export default function Reservations () {
             href="/"
             img={chumleyImage}
             img2x={chumleyImage2x}
-            title="La Salentina, see, nature & relax"
+            title="Chumley’s"
             subtitle="Speakeasy"
             description="About $60 per person"
           />
