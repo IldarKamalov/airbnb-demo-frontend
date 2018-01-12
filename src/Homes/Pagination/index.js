@@ -23,6 +23,7 @@ const Number = styled.a`
   text-decoration: none;
   color: #0f7276;
   border-radius: 50%;
+  cursor: pointer;
 
   ${props => props.current && `
     color: #fff;
