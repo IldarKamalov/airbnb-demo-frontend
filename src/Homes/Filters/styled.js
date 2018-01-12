@@ -25,10 +25,16 @@ export const Filter = Button.extend`
     border-color: #f2f2f2;
   }
 
-  &.active {
+  ${props => props.isOpen && `
     color: #fff;
-    background-color: #006c70;
-  }
+    background-color: #008489;
+
+    &:hover,
+    &:focus {
+      background-color: #008489;
+      border-color: #008489;
+    }
+  `}
 
   ${props => props.hiddenMobile && `
     display: none;

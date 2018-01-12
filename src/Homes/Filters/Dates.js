@@ -7,6 +7,7 @@ import { Filter } from './styled.js';
 
 const Dates = styled.div`
   position: relative;
+  z-index: 3;
   display: inline-block;
   vertical-align: middle;
 `;
@@ -17,6 +18,7 @@ const Content = styled.div`
   left: 0;
   display: flex;
   flex-direction: column;
+  padding: 3px;
   background-color: #fff;
   border: 1px solid rgba(72,72,72,0.2);
   border-radius: 4px;
@@ -44,6 +46,17 @@ const Action = styled.button`
   }
 `;
 
+const Backdrop = styled.div`
+  position: fixed;
+  top: 136px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: ${props => (props.isOpen ? "block" : "none")};
+  background: rgba(255, 255, 255, 0.8);
+`;
+
 const Cancel = styled(Action)``;
 
 const Apply = styled(Action)`
@@ -63,23 +76,26 @@ export default class Dropdown extends Component {
 
   render () {
     return (
-      <Dates>
-        <Filter onClick={this.toggleOpen}>Dates</Filter>
-        {this.state.isOpen &&
-          <Content>
-            <DayPickerRangeController
-              noBorder
-              hideKeyboardShortcutsPanel
-              numberOfMonths={2}
-              onPrevMonthClick={this.onPrevMonthClick}
-              onNextMonthClick={this.onNextMonthClick}
-            />
-            <Actions>
-              <Cancel>Cancel</Cancel>
-              <Apply>Apply</Apply>
-            </Actions>
-          </Content>}
-      </Dates>
+      <React.Fragment>
+        <Dates>
+          <Filter onClick={this.toggleOpen} isOpen={this.state.isOpen}>Dates</Filter>
+          {this.state.isOpen &&
+            <Content>
+              <DayPickerRangeController
+                noBorder
+                hideKeyboardShortcutsPanel
+                numberOfMonths={2}
+                onPrevMonthClick={this.onPrevMonthClick}
+                onNextMonthClick={this.onNextMonthClick}
+              />
+              <Actions>
+                <Cancel onClick={this.toggleOpen}>Cancel</Cancel>
+                <Apply>Apply</Apply>
+              </Actions>
+            </Content>}
+        </Dates>
+        <Backdrop isOpen={this.state.isOpen} onClick={this.toggleOpen}/>
+      </React.Fragment>
     );
   }
 }
