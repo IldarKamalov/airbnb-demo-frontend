@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import locationIcon from './location.svg';
 
-export const Location = styled.button`
+export const ShowMap = styled.button`
   position: fixed;
   right: 10px;
   bottom: 25px;
@@ -19,4 +19,4 @@ export const Location = styled.button`
   }
 `;
 
-export default Location;
+export default ShowMap;

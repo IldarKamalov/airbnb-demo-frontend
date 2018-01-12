@@ -69,9 +69,7 @@ export default class Dropdown extends Component {
   };
 
   toggleOpen = () => {
-    this.setState ({
-      isOpen: !this.state.isOpen,
-    });
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   };
 
   render () {

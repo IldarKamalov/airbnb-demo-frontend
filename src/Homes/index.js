@@ -1,12 +1,12 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 import { Homes, Cards, MapContainer } from './styled';
 import GoogleMap from './GoogleMap';
 import Filters from './Filters';
 import Card from './Card';
 import Info from './Info';
 import Pagination from './Pagination';
-import Location from './Location';
+import ShowMap from './ShowMap';
 
 import home1Image from './homes/first.png';
 import home1Image2x from './homes/first@2x.png';
@@ -125,7 +125,7 @@ export default function () {
         <GoogleMap />
       </MapContainer>
 
-      <Location />
+      <ShowMap />
     </Homes>
   );
 }

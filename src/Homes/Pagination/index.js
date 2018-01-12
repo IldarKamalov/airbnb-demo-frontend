@@ -14,7 +14,7 @@ const Pages = styled.div`
   margin-bottom: 15px;
 `;
 
-const Number = styled.a`
+const Page = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ const Number = styled.a`
   `}
 `;
 
-const Next = Number.extend`
+const Next = Page.extend`
   margin-left: 10px;
   background: url(${arrow}) no-repeat 13px 10px;
   background-size: 6px 10px;
@@ -49,11 +49,11 @@ export default props => {
     <div>
       <Wrap>
         <Pages>
-          <Number to="/homes" current={true}>1</Number>
-          <Number to="/homes">2</Number>
-          <Number to="/homes">3</Number>
-          <Number to="/homes">...</Number>
-          <Number to="/homes">17</Number>
+          <Page to="/homes" current={true}>1</Page>
+          <Page to="/homes">2</Page>
+          <Page to="/homes">3</Page>
+          <Page to="/homes">...</Page>
+          <Page to="/homes">17</Page>
           <Next to="/homes" />
         </Pages>
         <Total>

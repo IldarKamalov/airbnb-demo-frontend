@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 import Content from './styled';
 import Explore from './Explore';
 import Experiences from './Experiences';
