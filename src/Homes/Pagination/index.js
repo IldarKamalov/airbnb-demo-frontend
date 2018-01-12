@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrow from './arrow.svg';
 
@@ -15,7 +14,7 @@ const Pages = styled.div`
   margin-bottom: 15px;
 `;
 
-const Number = styled(Link)`
+const Number = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +48,7 @@ export default props => {
     <div>
       <Wrap>
         <Pages>
-          <Number to="/homes" current>1</Number>
+          <Number to="/homes" current={true}>1</Number>
           <Number to="/homes">2</Number>
           <Number to="/homes">3</Number>
           <Number to="/homes">...</Number>

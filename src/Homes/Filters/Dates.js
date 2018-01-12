@@ -26,12 +26,16 @@ const Actions = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  padding: 25px;
 `;
 
-const Link = styled.a`
+const Action = styled.button`
+  padding: 22px 25px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #636363;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
   cursor: pointer;
 
   &:hover,
@@ -40,9 +44,9 @@ const Link = styled.a`
   }
 `;
 
-const Cancel = styled(Link)``;
+const Cancel = styled(Action)``;
 
-const Apply = styled(Link)`
+const Apply = styled(Action)`
   color: #0f7276;
 `;
 
