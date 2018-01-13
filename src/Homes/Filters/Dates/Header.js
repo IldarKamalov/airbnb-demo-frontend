@@ -13,11 +13,12 @@ const Header = styled.div`
 
 const Days = styled.p`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
 `;
 
 const Day = styled.span`
+  padding: 0 12px;
   font-size: 12px;
   color: #636363;
 `;

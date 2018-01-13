@@ -20,6 +20,7 @@ export const Button = styled.button`
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+  background-color: #fff;
   border: solid 1px rgba(72, 72, 72, 0.2);
   border-radius: 4px;
   outline: 0;
