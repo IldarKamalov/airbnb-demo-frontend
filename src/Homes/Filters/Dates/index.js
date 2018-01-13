@@ -52,6 +52,10 @@ export default class Dropdown extends Component {
     this.setState({ focusedInput: !focusedInput ? "startDate" : focusedInput });
   }
 
+  handleCancel = () => {
+    this.setState({ startDate: null, endDate: null, isOpen: false });
+  }
+
   render () {
     return (
       <React.Fragment>
@@ -62,7 +66,7 @@ export default class Dropdown extends Component {
           {this.state.isOpen &&
             <Content>
               <Title>
-                <Close onClick={this.toggleOpen} />
+                <Close onClick={this.handleCancel} />
                 Dates
                 <Reset onClick={this.resetDates}>Reset</Reset>
               </Title>
@@ -82,13 +86,13 @@ export default class Dropdown extends Component {
                 focusedInput={this.state.focusedInput}
               />
               <Actions>
-                <Cancel onClick={this.toggleOpen}>Cancel</Cancel>
+                <Cancel onClick={this.handleCancel}>Cancel</Cancel>
                 <Apply onClick={this.toggleOpen}>Apply</Apply>
                 <Save onClick={this.toggleOpen}>Save</Save>
               </Actions>
             </Content>}
         </Dates>
-        <Backdrop isOpen={this.state.isOpen} onClick={this.toggleOpen} />
+        <Backdrop isOpen={this.state.isOpen} onClick={this.handleCancel} />
       </React.Fragment>
     );
   }

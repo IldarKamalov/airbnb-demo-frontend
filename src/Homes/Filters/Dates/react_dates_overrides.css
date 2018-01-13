@@ -8,8 +8,8 @@
   }
 }
 
-.CalendarDay__selected, 
-.CalendarDay__selected:active, 
+.CalendarDay__selected,
+.CalendarDay__selected:active,
 .CalendarDay__selected:hover,
 .CalendarDay__hovered_span:hover,
 .CalendarDay__highlighted_calendar:active {
@@ -19,7 +19,7 @@
 }
 
 .CalendarDay__selected_span,
-.CalendarDay__selected_span:active, 
+.CalendarDay__selected_span:active,
 .CalendarDay__selected_span:hover,
 .CalendarDay__hovered_span {
   background: rgba(0, 132, 137, 0.1);
