@@ -7,3 +7,22 @@
     margin: 0;
   }
 }
+
+.CalendarDay__selected, 
+.CalendarDay__selected:active, 
+.CalendarDay__selected:hover,
+.CalendarDay__hovered_span:hover,
+.CalendarDay__highlighted_calendar:active {
+  background: #008489;
+  border-color: #008489;
+  color: #fff;
+}
+
+.CalendarDay__selected_span,
+.CalendarDay__selected_span:active, 
+.CalendarDay__selected_span:hover,
+.CalendarDay__hovered_span {
+  background: rgba(0, 132, 137, 0.1);
+  border-color: #9cd9d9;
+  color: #383838;
+}

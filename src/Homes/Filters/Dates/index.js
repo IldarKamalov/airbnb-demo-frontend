@@ -18,47 +18,73 @@ import {
 } from './styled';
 import Header from './Header';
 
+const formatDateLabel = (startDate, endDate, isOpen) => {
+  if (startDate && endDate) {
+    return `${startDate.format("MMM DD")} – ${endDate.format("MMM DD")}`;
+  } else if (isOpen) {
+    return "Check in — Check out";
+  } else {
+    return "Dates";
+  }
+};
+
 export default class Dropdown extends Component {
   state = {
     isOpen: false,
+    startDate: null,
+    endDate: null,
+    focusedInput: this.props.autoFocusEndDate ? "endDate" : "startDate"
   };
 
   toggleOpen = () => {
-    this.setState (prevState => ({isOpen: !prevState.isOpen}));
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   };
+
+  onDatesChange = ({ startDate, endDate }) => {
+    this.setState({ startDate, endDate });
+  }
+
+  resetDates = () => {
+    this.setState({ startDate: null, endDate: null });
+  };
+
+  onFocusChange = (focusedInput) => {
+    this.setState({ focusedInput: !focusedInput ? "startDate" : focusedInput });
+  }
 
   render () {
     return (
       <React.Fragment>
         <Dates>
           <Button onClick={this.toggleOpen} isOpen={this.state.isOpen}>
-            {this.state.isOpen ? 'Check in — Check out' : 'Dates'}
+            {formatDateLabel(this.state.startDate, this.state.endDate, this.state.isOpen)}
           </Button>
           {this.state.isOpen &&
             <Content>
               <Title>
                 <Close onClick={this.toggleOpen} />
                 Dates
-                <Reset>Reset</Reset>
+                <Reset onClick={this.resetDates}>Reset</Reset>
               </Title>
 
               <Header />
 
               <DayPickerRangeController
                 noBorder
+                hideKeyboardShortcutsPanel
                 numberOfMonths={
                   matchMedia ('(min-width: 576px)').matches ? 2 : 1
                 }
-                hideKeyboardShortcutsPanel
-                date={this.state.date}
-                onDateChange={date => this.setState({ date })}
-                focused={this.state.focused}
-                onFocusChange={({ focused }) => this.setState({ focused })}
+                startDate={this.state.startDate}
+                endDate={this.state.endDate}
+                onDatesChange={this.onDatesChange}
+                onFocusChange={this.onFocusChange}
+                focusedInput={this.state.focusedInput}
               />
               <Actions>
                 <Cancel onClick={this.toggleOpen}>Cancel</Cancel>
-                <Apply>Apply</Apply>
-                <Save>Save</Save>
+                <Apply onClick={this.toggleOpen}>Apply</Apply>
+                <Save onClick={this.toggleOpen}>Save</Save>
               </Actions>
             </Content>}
         </Dates>
