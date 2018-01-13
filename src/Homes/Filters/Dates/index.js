@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'react-dates/initialize';
 import { DayPickerRangeController } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
+import './react_dates_overrides.css';
 import { Filter } from '../styled';
 import {
   Dates,
@@ -46,14 +47,13 @@ export default class Dropdown extends Component {
               <DayPickerRangeController
                 noBorder
                 numberOfMonths={
-                  matchMedia ('(min-width: 768px)').matches ? 2 : 1
+                  matchMedia ('(min-width: 576px)').matches ? 2 : 1
                 }
                 hideKeyboardShortcutsPanel
-                startDate={this.state.startDate}
-                endDate={this.state.endDate}
-                onDatesChange={this.onDatesChange}
-                focusedInput={this.state.focusedInput}
-                onFocusChange={this.onFocusChange}
+                date={this.state.date}
+                onDateChange={date => this.setState({ date })}
+                focused={this.state.focused}
+                onFocusChange={({ focused }) => this.setState({ focused })}
               />
               <Actions>
                 <Cancel onClick={this.toggleOpen}>Cancel</Cancel>

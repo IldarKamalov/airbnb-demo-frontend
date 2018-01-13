@@ -93,6 +93,15 @@ export const Save = styled.button`
   border-radius: 4px;
   cursor: pointer;
 
+  &:hover {
+    background-color: #f53d43;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #ed262c;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
