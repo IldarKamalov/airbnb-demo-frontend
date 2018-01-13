@@ -28,6 +28,8 @@ const formatDateLabel = (startDate, endDate, isOpen) => {
   }
 };
 
+const numberOfMonths = matchMedia('(min-width: 768px)').matches ? 2 : 1;
+
 export default class Dropdown extends Component {
   state = {
     isOpen: false,
@@ -76,9 +78,7 @@ export default class Dropdown extends Component {
               <DayPickerRangeController
                 noBorder
                 hideKeyboardShortcutsPanel
-                numberOfMonths={
-                  matchMedia ('(min-width: 576px)').matches ? 2 : 1
-                }
+                numberOfMonths={numberOfMonths}
                 startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 onDatesChange={this.onDatesChange}
