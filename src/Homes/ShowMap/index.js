@@ -13,6 +13,7 @@ export const ShowMap = styled.button`
   border: solid 1px rgba(72, 72, 72, 0.16);
   border-radius: 50%;
   outline: 0;
+  cursor: pointer;
 
   @media screen and (min-width: 992px) {
     display: none;
