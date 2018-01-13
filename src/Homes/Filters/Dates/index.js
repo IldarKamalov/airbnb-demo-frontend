@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import { DayPickerRangeController } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import './react_dates_overrides.css';
-import { Filter } from '../styled';
+import { Button } from '../styled';
 import {
   Dates,
   Content,
@@ -31,9 +31,9 @@ export default class Dropdown extends Component {
     return (
       <React.Fragment>
         <Dates>
-          <Filter onClick={this.toggleOpen} isOpen={this.state.isOpen}>
+          <Button onClick={this.toggleOpen} isOpen={this.state.isOpen}>
             {this.state.isOpen ? 'Check in — Check out' : 'Dates'}
-          </Filter>
+          </Button>
           {this.state.isOpen &&
             <Content>
               <Title>

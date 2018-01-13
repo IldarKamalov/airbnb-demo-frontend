@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Button from '../../UI/Button';
 
 export const Wrap = styled.div`
   position: fixed;
@@ -12,8 +11,16 @@ export const Wrap = styled.div`
   z-index: 1;
 `;
 
-export const Filter = Button.extend`
+export const Button = styled.button`
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
+  padding: 7px 15px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: solid 1px rgba(72, 72, 72, 0.2);
+  border-radius: 4px;
   outline: 0;
   cursor: pointer;
 
