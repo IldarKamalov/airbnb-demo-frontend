@@ -44,7 +44,7 @@ const Total = styled.p`
   color: #383838;
 `;
 
-export default props => {
+export default function () {
   return (
     <div>
       <Wrap>

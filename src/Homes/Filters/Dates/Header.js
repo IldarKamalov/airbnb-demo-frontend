@@ -42,7 +42,7 @@ const Arrow = styled.img`
   margin: 0 15px;
 `;
 
-export default props => {
+export default function () {
   return (
     <Header>
       <Check>

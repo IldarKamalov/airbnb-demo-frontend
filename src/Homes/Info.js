@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Text = styled.p`
@@ -12,14 +12,12 @@ const Text = styled.p`
   }
 `;
 
-export default class Info extends Component {
-  render () {
-    return (
-      <div>
-        <Text>
-          Enter dates to see full pricing. Additional fees apply. Taxes may be added.
-        </Text>
-      </div>
-    );
-  }
+export default function () {
+  return (
+    <div>
+      <Text>
+        Enter dates to see full pricing. Additional fees apply. Taxes may be added.
+      </Text>
+    </div>
+  );
 }

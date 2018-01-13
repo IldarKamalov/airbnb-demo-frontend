@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const Wrap = styled.div`
+export const Filters = styled.div`
   position: fixed;
   top: 81px;
   left: 0;
   width: 100%;
   padding: 12px 0;
+  white-space: nowrap;
   background-color: #fff;
   box-shadow: 0 0.5px 0 0 rgba(72, 72, 72, 0.3);
   z-index: 1;
@@ -50,4 +51,4 @@ export const Button = styled.button`
   `}
 `;
 
-export default Wrap;
+export default Filters;
