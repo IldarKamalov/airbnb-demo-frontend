@@ -46,20 +46,18 @@ const Total = styled.p`
 
 export default function () {
   return (
-    <div>
-      <Wrap>
-        <Pages>
-          <Page to="/homes" current={true}>1</Page>
-          <Page to="/homes">2</Page>
-          <Page to="/homes">3</Page>
-          <Page to="/homes">...</Page>
-          <Page to="/homes">17</Page>
-          <Next to="/homes" />
-        </Pages>
-        <Total>
-          1 – 18 of 300+ Rentals
-        </Total>
-      </Wrap>
-    </div>
+    <Wrap>
+      <Pages>
+        <Page to="/homes" current={true}>1</Page>
+        <Page to="/homes">2</Page>
+        <Page to="/homes">3</Page>
+        <Page to="/homes">...</Page>
+        <Page to="/homes">17</Page>
+        <Next to="/homes" />
+      </Pages>
+      <Total>
+        1 – 18 of 300+ Rentals
+      </Total>
+    </Wrap>
   );
 }

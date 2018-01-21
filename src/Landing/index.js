@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Footer from '../Footer';
 import Content from './styled';
 import Explore from './Explore';
 import Experiences from './Experiences';
@@ -9,18 +10,22 @@ import Destinations from './Destinations';
 
 export default function () {
   return (
-    <div className="container">
-      <Helmet>
+    <React.Fragment>
+      <div className="container">
+        <Helmet>
           <title>Airbnb Frontend | Landing</title>
-      </Helmet>
+        </Helmet>
 
-      <Content>
-        <Explore />
-        <Experiences />
-        <Homes />
-        <Reservations />
-        <Destinations />
-      </Content>
-    </div>
+        <Content>
+          <Explore />
+          <Experiences />
+          <Homes />
+          <Reservations />
+          <Destinations />
+        </Content>
+      </div>
+
+      <Footer />
+    </React.Fragment>
   );
 }

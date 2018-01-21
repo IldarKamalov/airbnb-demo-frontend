@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RouteLink } from 'react-router-dom';
 import chevron from '../UI/chevron.svg';
 
 export const Header = styled.header`
@@ -18,7 +18,7 @@ export const Inner = styled.div`
   height: 80px;
 `;
 
-export const Logo = styled(Link)`
+export const Logo = styled(RouteLink)`
   position: relative;
   display: block;
   margin-right: 10px;
@@ -109,7 +109,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const InlineLink = styled(Link)`
+export const Link = styled(RouteLink)`
   margin-right: 10px;
   padding: 8px 10px;
   text-decoration: none;

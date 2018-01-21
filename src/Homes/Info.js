@@ -14,10 +14,8 @@ const Text = styled.p`
 
 export default function () {
   return (
-    <div>
-      <Text>
-        Enter dates to see full pricing. Additional fees apply. Taxes may be added.
-      </Text>
-    </div>
+    <Text>
+      Enter dates to see full pricing. Additional fees apply. Taxes may be added.
+    </Text>
   );
 }

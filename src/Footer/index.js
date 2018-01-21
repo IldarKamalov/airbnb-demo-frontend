@@ -8,7 +8,7 @@ import {
   Logo,
   Img,
   Copy,
-  ListLink,
+  Link,
   InlineLink,
   IconLink
 } from './styled';
@@ -44,33 +44,33 @@ export default function () {
               <Title>
                 Airbnb
               </Title>
-              <ListLink to="/">About us</ListLink>
-              <ListLink to="/">Careers</ListLink>
-              <ListLink to="/">Press</ListLink>
-              <ListLink to="/">Policies</ListLink>
-              <ListLink to="/">Help</ListLink>
-              <ListLink to="/">Diversity & Belonging</ListLink>
+              <Link to="/">About us</Link>
+              <Link to="/">Careers</Link>
+              <Link to="/">Press</Link>
+              <Link to="/">Policies</Link>
+              <Link to="/">Help</Link>
+              <Link to="/">Diversity & Belonging</Link>
             </div>
             <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
               <Title>
                 Discover
               </Title>
-              <ListLink to="/">Trust & Safety</ListLink>
-              <ListLink to="/">Travel Credit</ListLink>
-              <ListLink to="/">Gift Cards</ListLink>
-              <ListLink to="/">Airbnb Citizen</ListLink>
-              <ListLink to="/">Business Travel</ListLink>
-              <ListLink to="/">Guidebooks</ListLink>
-              <ListLink to="/">Airbnbmag</ListLink>
+              <Link to="/">Trust & Safety</Link>
+              <Link to="/">Travel Credit</Link>
+              <Link to="/">Gift Cards</Link>
+              <Link to="/">Airbnb Citizen</Link>
+              <Link to="/">Business Travel</Link>
+              <Link to="/">Guidebooks</Link>
+              <Link to="/">Airbnbmag</Link>
             </div>
             <div className="hidden-xs hidden-sm col-md-2 col-lg-2">
               <Title>
                 Hosting
               </Title>
-              <ListLink to="/">Why Host</ListLink>
-              <ListLink to="/">Hospitality</ListLink>
-              <ListLink to="/">Responsible Hosting</ListLink>
-              <ListLink to="/">Community Center</ListLink>
+              <Link to="/">Why Host</Link>
+              <Link to="/">Hospitality</Link>
+              <Link to="/">Responsible Hosting</Link>
+              <Link to="/">Community Center</Link>
             </div>
           </div>
         </Top>

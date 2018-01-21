@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RouteLink } from 'react-router-dom';
 
 export const Footer = styled.footer`
   box-shadow: 0 -0.5px 0 0 rgba(72, 72, 72, 0.3);
@@ -41,7 +41,7 @@ export const Title = styled.div`
   }
 `;
 
-export const ListLink = styled(Link)`
+export const Link = styled(RouteLink)`
   display: block;
   margin-bottom: 12px;
   font-size: 12px;
@@ -59,13 +59,13 @@ export const ListLink = styled(Link)`
   }
 `;
 
-export const InlineLink = ListLink.extend`
+export const InlineLink = Link.extend`
   display: inline-block;
   vertical-align: middle;
   margin: 0 15px 0 0;
 `;
 
-export const IconLink = ListLink.extend`
+export const IconLink = Link.extend`
   margin: 2px 12px 0 0;
 
   &:last-child {

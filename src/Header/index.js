@@ -8,7 +8,7 @@ import {
   SearchIcon,
   SearchInput,
   Nav,
-  InlineLink,
+  Link,
 } from './styled';
 import logo from './colorLogo.svg';
 import icon from './searchIcon.svg';
@@ -28,10 +28,10 @@ export default function () {
           </Search>
 
           <Nav>
-            <InlineLink to="/become-a-host">Become a host</InlineLink>
-            <InlineLink to="/help">Help</InlineLink>
-            <InlineLink to="/sign-up">Sign Up</InlineLink>
-            <InlineLink to="/login">Login</InlineLink>
+            <Link to="/become-a-host">Become a host</Link>
+            <Link to="/help">Help</Link>
+            <Link to="/sign-up">Sign Up</Link>
+            <Link to="/login">Login</Link>
           </Nav>
         </Inner>
       </div>

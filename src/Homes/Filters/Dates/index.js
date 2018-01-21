@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'react-dates/initialize';
 import { DayPickerRangeController } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
-import './react_dates_overrides.css';
+import './reactDates.css';
 import { Button } from '../styled';
 import {
   Dates,
