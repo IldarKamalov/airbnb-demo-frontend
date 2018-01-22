@@ -1,8 +1,15 @@
 import styled from 'styled-components';
-import chevron from '../elements/chevron.svg';
+import { Link as RouteLink } from 'react-router-dom';
+import chevron from '../UI/chevron.svg';
 
 export const Header = styled.header`
-  box-shadow: 0 0.5px 0 0 rgba(72, 72, 72, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 0.5px solid rgba(72,72,72,0.3);
+  z-index: 1;
 `;
 
 export const Inner = styled.div`
@@ -11,14 +18,11 @@ export const Inner = styled.div`
   height: 80px;
 `;
 
-export const Logo = styled.button`
+export const Logo = styled(RouteLink)`
   position: relative;
   display: block;
   margin-right: 10px;
   padding: 0 15px 0 0;
-  background: transparent;
-  border: 0;
-  outline: 0;
 
   &:after {
     content: "";
@@ -34,11 +38,14 @@ export const Logo = styled.button`
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: 20px;
-    padding: 0 20px 0 0;
+    margin-right: 17px;
+    padding: 0 17px 0 0;
   }
 
   @media screen and (min-width: 992px) {
+    margin-right: 25px;
+    padding: 0 25px 0 0;
+
     &:after {
       display: none;
     }
@@ -102,9 +109,9 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Link = styled.a`
-  margin-right: 8px;
-  padding: 8px;
+export const Link = styled(RouteLink)`
+  margin-right: 10px;
+  padding: 8px 10px;
   text-decoration: none;
   color: #383838;
   border-bottom: 2px solid transparent;

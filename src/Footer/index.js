@@ -2,21 +2,21 @@ import React from 'react';
 import {
   Footer,
   Title,
-  Link,
   Top,
   Bottom,
   Nav,
   Logo,
   Img,
   Copy,
+  Link,
   InlineLink,
-  IconLink,
+  IconLink
 } from './styled';
 import logo from './logo.svg';
 import twitter from './twitter.svg';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
-import Select from '../elements/Select';
+import Select from '../UI/Select';
 
 export default function () {
   return (
@@ -44,33 +44,33 @@ export default function () {
               <Title>
                 Airbnb
               </Title>
-              <Link href="#!">About us</Link>
-              <Link href="#!">Careers</Link>
-              <Link href="#!">Press</Link>
-              <Link href="#!">Policies</Link>
-              <Link href="#!">Help</Link>
-              <Link href="#!">Diversity & Belonging</Link>
+              <Link to="/">About us</Link>
+              <Link to="/">Careers</Link>
+              <Link to="/">Press</Link>
+              <Link to="/">Policies</Link>
+              <Link to="/">Help</Link>
+              <Link to="/">Diversity & Belonging</Link>
             </div>
             <div className="hidden-xs hidden-sm col-md-3 col-lg-3">
               <Title>
                 Discover
               </Title>
-              <Link href="#!">Trust & Safety</Link>
-              <Link href="#!">Travel Credit</Link>
-              <Link href="#!">Gift Cards</Link>
-              <Link href="#!">Airbnb Citizen</Link>
-              <Link href="#!">Business Travel</Link>
-              <Link href="#!">Guidebooks</Link>
-              <Link href="#!">Airbnbmag</Link>
+              <Link to="/">Trust & Safety</Link>
+              <Link to="/">Travel Credit</Link>
+              <Link to="/">Gift Cards</Link>
+              <Link to="/">Airbnb Citizen</Link>
+              <Link to="/">Business Travel</Link>
+              <Link to="/">Guidebooks</Link>
+              <Link to="/">Airbnbmag</Link>
             </div>
             <div className="hidden-xs hidden-sm col-md-2 col-lg-2">
               <Title>
                 Hosting
               </Title>
-              <Link href="#!">Why Host</Link>
-              <Link href="#!">Hospitality</Link>
-              <Link href="#!">Responsible Hosting</Link>
-              <Link href="#!">Community Center</Link>
+              <Link to="/">Why Host</Link>
+              <Link to="/">Hospitality</Link>
+              <Link to="/">Responsible Hosting</Link>
+              <Link to="/">Community Center</Link>
             </div>
           </div>
         </Top>
@@ -80,16 +80,16 @@ export default function () {
             © Airbnb Inc.
           </Copy>
           <Nav>
-            <InlineLink href="#!">Terms</InlineLink>
-            <InlineLink href="#!">Privacy</InlineLink>
-            <InlineLink href="#!">Site map</InlineLink>
-            <IconLink href="#!">
+            <InlineLink to="/">Terms</InlineLink>
+            <InlineLink to="/">Privacy</InlineLink>
+            <InlineLink to="/">Site map</InlineLink>
+            <IconLink to="/">
               <Img src={facebook} />
             </IconLink>
-            <IconLink href="#!">
+            <IconLink to="/">
               <Img src={twitter} />
             </IconLink>
-            <IconLink href="#!">
+            <IconLink to="/">
               <Img src={instagram} />
             </IconLink>
           </Nav>

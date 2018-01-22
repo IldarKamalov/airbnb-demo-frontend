@@ -18,7 +18,7 @@ export default function () {
     <Header>
       <div className="container">
         <Inner>
-          <Logo type="button">
+          <Logo to="/">
             <LogoImage src={logo} />
           </Logo>
 
@@ -28,10 +28,10 @@ export default function () {
           </Search>
 
           <Nav>
-            <Link href="/become-a-host">Become a host</Link>
-            <Link href="/help">Help</Link>
-            <Link href="/sign-up">Sign Up</Link>
-            <Link href="/login">Login</Link>
+            <Link to="/become-a-host">Become a host</Link>
+            <Link to="/help">Help</Link>
+            <Link to="/sign-up">Sign Up</Link>
+            <Link to="/login">Login</Link>
           </Nav>
         </Inner>
       </div>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as RouteLink } from 'react-router-dom';
 
 export const Footer = styled.footer`
   box-shadow: 0 -0.5px 0 0 rgba(72, 72, 72, 0.3);
@@ -40,7 +41,7 @@ export const Title = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const Link = styled(RouteLink)`
   display: block;
   margin-bottom: 12px;
   font-size: 12px;
