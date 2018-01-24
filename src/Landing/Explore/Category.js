@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Category = styled(Link)`
+const Category = styled(Link)`
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -15,7 +15,7 @@ export const Category = styled(Link)`
   }
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   display: block;
   width: 100%;
   max-width: 100%;
@@ -28,7 +28,7 @@ export const Img = styled.img`
   }
 `;
 
-export const Name = styled.p`
+const Name = styled.p`
   display: flex;
   align-items: center;
   width: 100%;

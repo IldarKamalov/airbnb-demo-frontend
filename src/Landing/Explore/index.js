@@ -9,7 +9,7 @@ import experiencesImage2x from './experiences@2x.png';
 import restaurantsImage from './restaurants.png';
 import restaurantsImage2x from './restaurants@2x.png';
 
-export default function Explore () {
+export default function Explore() {
   return (
     <Section>
       <Title>

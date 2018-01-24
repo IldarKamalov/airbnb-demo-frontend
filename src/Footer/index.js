@@ -10,7 +10,7 @@ import {
   Copy,
   Link,
   InlineLink,
-  IconLink
+  IconLink,
 } from './styled';
 import logo from './logo.svg';
 import twitter from './twitter.svg';

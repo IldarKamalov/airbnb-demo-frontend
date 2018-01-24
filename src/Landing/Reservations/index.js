@@ -13,7 +13,7 @@ import primeImage2x from './prime@2x.png';
 import seapriceImage from './seaprice.png';
 import seapriceImage2x from './seaprice@2x.png';
 
-export default function Reservations () {
+export default function Reservations() {
   return (
     <Section>
       <Title>

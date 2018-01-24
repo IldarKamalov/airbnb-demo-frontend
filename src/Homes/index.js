@@ -25,7 +25,7 @@ export default function () {
   return (
     <Homes>
       <Helmet>
-          <title>Airbnb Frontend | Homes</title>
+        <title>Airbnb Frontend | Homes</title>
       </Helmet>
 
       <Filters />

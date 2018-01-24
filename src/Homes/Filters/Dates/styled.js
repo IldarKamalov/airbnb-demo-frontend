@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import cross from './cross.svg';
 
-export const Dates = styled.div`
+export const Dropdown = styled.div`
   position: relative;
   z-index: 3;
   display: inline-block;
@@ -145,4 +145,4 @@ export const Reset = styled.button`
   }
 `;
 
-export default Dates;
+export default Dropdown;

@@ -13,7 +13,7 @@ import salsaImage2x from './salsa@2x.png';
 import whaleImage from './whale.png';
 import whaleImage2x from './whale@2x.png';
 
-export default function Experiences () {
+export default function Experiences() {
   return (
     <Section>
       <Title>
