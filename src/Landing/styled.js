@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import chevron from '../UI/chevron.svg';
 
-export const Content = styled.div`
+export default styled.div`
   padding: 125px 0 60px;
 `;
 
@@ -67,5 +67,3 @@ export const Scroll = styled.div`
   padding: 5px 0;
   overflow-y: auto;
 `;
-
-export default Content;

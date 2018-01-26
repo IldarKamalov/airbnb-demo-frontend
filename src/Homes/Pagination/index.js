@@ -48,7 +48,7 @@ export default function () {
   return (
     <Wrap>
       <Pages>
-        <Page to="/homes" current={true}>1</Page>
+        <Page to="/homes" current>1</Page>
         <Page to="/homes">2</Page>
         <Page to="/homes">3</Page>
         <Page to="/homes">...</Page>

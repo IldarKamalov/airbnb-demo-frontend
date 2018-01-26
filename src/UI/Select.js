@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import chevron from './chevron.svg';
 
-export const Select = styled.select`
+export default styled.select`
   display: block;
   width: 100%;
   height: 40px;
@@ -44,5 +44,3 @@ export const Select = styled.select`
     background-size: 15px 10px;
   }
 `;
-
-export default Select;

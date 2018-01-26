@@ -5,7 +5,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import './ReactDates.css';
 import { Button } from '../styled';
 import {
-  Dates,
+  Dropdown,
   Content,
   Actions,
   Cancel,
@@ -20,48 +20,47 @@ import Header from './Header';
 
 const formatDateLabel = (startDate, endDate, isOpen) => {
   if (startDate && endDate) {
-    return `${startDate.format("MMM DD")} – ${endDate.format("MMM DD")}`;
+    return `${startDate.format('MMM DD')} – ${endDate.format('MMM DD')}`;
   } else if (isOpen) {
-    return "Check in — Check out";
-  } else {
-    return "Dates";
+    return 'Check in — Check out';
   }
+  return 'Dates';
 };
 
 const numberOfMonths = matchMedia('(min-width: 768px)').matches ? 2 : 1;
 
-export default class Dropdown extends Component {
+export default class Dates extends Component {
   state = {
     isOpen: false,
     startDate: null,
     endDate: null,
-    focusedInput: this.props.autoFocusEndDate ? "endDate" : "startDate"
-  };
-
-  toggleOpen = () => {
-    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+    focusedInput: this.props.autoFocusEndDate ? 'endDate' : 'startDate',
   };
 
   onDatesChange = ({ startDate, endDate }) => {
     this.setState({ startDate, endDate });
   }
 
+  onFocusChange = (focusedInput) => {
+    this.setState({ focusedInput: !focusedInput ? 'startDate' : focusedInput });
+  }
+
   resetDates = () => {
     this.setState({ startDate: null, endDate: null });
   };
 
-  onFocusChange = (focusedInput) => {
-    this.setState({ focusedInput: !focusedInput ? "startDate" : focusedInput });
-  }
+  toggleOpen = () => {
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+  };
 
   handleCancel = () => {
     this.setState({ startDate: null, endDate: null, isOpen: false });
   }
 
-  render () {
+  render() {
     return (
       <React.Fragment>
-        <Dates>
+        <Dropdown>
           <Button onClick={this.toggleOpen} isOpen={this.state.isOpen}>
             {formatDateLabel(this.state.startDate, this.state.endDate, this.state.isOpen)}
           </Button>
@@ -91,7 +90,7 @@ export default class Dropdown extends Component {
                 <Save onClick={this.toggleOpen}>Save</Save>
               </Actions>
             </Content>}
-        </Dates>
+        </Dropdown>
         <Backdrop isOpen={this.state.isOpen} onClick={this.handleCancel} />
       </React.Fragment>
     );

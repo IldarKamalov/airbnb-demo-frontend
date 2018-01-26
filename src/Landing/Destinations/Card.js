@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Card = styled(Link)`
+const Card = styled(Link)`
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -10,14 +10,14 @@ export const Card = styled(Link)`
   color: #383838;
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   display: block;
   width: 100%;
   max-width: 100%;
   margin-bottom: 8px;
 `;
 
-export const Title = styled.p`
+const Title = styled.p`
   margin: 0 0 3px 0;
   font-size: 15px;
   font-weight: 700;

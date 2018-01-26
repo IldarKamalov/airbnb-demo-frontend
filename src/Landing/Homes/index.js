@@ -11,7 +11,7 @@ import secondHomeImage2x from './second@2x.png';
 import thirdHomeImage from './third.png';
 import thirdHomeImage2x from './third@2x.png';
 
-export default function Homes () {
+export default function Homes() {
   return (
     <Section>
       <Title>

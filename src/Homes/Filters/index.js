@@ -2,7 +2,7 @@ import React from 'react';
 import { Filters, Button } from './styled';
 import Dates from './Dates';
 
-export default function() {
+export default function () {
   return (
     <Filters>
       <div className="container">

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import chevron from './chevron.svg';
 
-export const SliderArrow = styled.button`
+export default styled.button`
   position: absolute;
   top: 50%;
   right: -20px;
@@ -22,5 +22,3 @@ export const SliderArrow = styled.button`
     display: block;
   }
 `;
-
-export default SliderArrow;

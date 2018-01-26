@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Stars from '../UI/Rating';
 
-export const Card = styled(Link)`
+const Card = styled(Link)`
   display: block;
   margin: 0 auto 25px;
   max-width: 100%;
@@ -15,14 +15,14 @@ export const Card = styled(Link)`
   }
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   display: block;
   width: 100%;
   max-width: 100%;
   margin-bottom: 8px;
 `;
 
-export const Title = styled.p`
+const Title = styled.p`
   margin: 0 0 3px 0;
   font-size: 15px;
   font-weight: 700;
@@ -37,37 +37,29 @@ export const Title = styled.p`
   }
 `;
 
-export const Subtitle = styled.p`
-  margin: 0 0 2px 0;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #383838;
-`;
-
-export const Price = styled.strong`
+const Price = styled.strong`
   padding-right: 5px;
   font-weight: bold;
 `;
 
-export const Rating = styled.div`
+const Rating = styled.div`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 `;
 
-export const Review = styled.span`
+const Review = styled.span`
   margin-left: 6px;
   font-size: 12px;
 `;
 
-export const Description = styled.p`
+const Description = styled.p`
   margin: 0 0 7px 0;
   font-size: 15px;
   font-weight: 300;
 `;
 
-export const Divider = styled.span`
+const Divider = styled.span`
   padding: 0 5px;
 `;
 
