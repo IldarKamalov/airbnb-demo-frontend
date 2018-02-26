@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import times from 'lodash/times';
 import Stars from '../UI/Rating';
 
 const Card = styled(Link)`
@@ -49,8 +50,9 @@ const Rating = styled.div`
 `;
 
 const Review = styled.span`
-  margin-left: 6px;
+  margin-left: 7px;
   font-size: 12px;
+  line-height: 1;
 `;
 
 const Description = styled.p`
@@ -86,7 +88,7 @@ export default props => (
       {props.beds} {props.beds > 1 ? 'beds' : 'bed'}
     </Description>
     <Rating>
-      <Stars five />
+      {times(Number(props.rating), () => <Stars />)}
       <Review>
         {props.reviewsCount}
         {props.isSuperhost &&

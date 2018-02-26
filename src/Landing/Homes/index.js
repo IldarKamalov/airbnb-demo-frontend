@@ -36,12 +36,12 @@ export default class Homes extends Component {
             <div className="col-sm-8 col-md-5 col-lg-4" key={data.id}>
               <Card
                 to="/homes"
-                key={data.id}
                 img={data.images[0].picture}
                 price={data.price}
                 title={data.name}
                 beds={data.bedsCount}
                 kind={data.kind}
+                rating={data.rating}
                 reviewsCount={data.reviewsCount}
                 isSuperhost={data.isSuperhost}
               />

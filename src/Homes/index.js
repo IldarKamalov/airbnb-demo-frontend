@@ -47,6 +47,7 @@ export default class Homes extends Component {
                     title={data.name}
                     beds={data.bedsCount}
                     kind={data.kind}
+                    rating={data.rating}
                     reviewsCount={data.reviewsCount}
                     isSuperhost={data.isSuperhost}
                   />
