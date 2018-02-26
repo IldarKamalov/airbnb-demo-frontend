@@ -5,48 +5,21 @@ export const Rating = styled.div`
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 76px;
+  width: 12px;
   height: 12px;
-  background: url("${star}") repeat-x center;
-  background-size: 16px 12px;
+  margin-right: 4px;
+  background: url("${star}") no-repeat left;
+  background-size: 12px 12px;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 11px;
-    background-color: #fff;
+  &:last-of-type {
+    margin-right: 0;
   }
 
   ${props => props.five && `
-    &:after {
-      width: 0;
-    }
-  `}
-
-  ${props => props.four && `
-    &:after {
-      width: 12px;
-    }
-  `}
-
-  ${props => props.three && `
-    &:after {
-      width: 24px;
-    }
-  `}
-
-  ${props => props.two && `
-    &:after {
-      width: 36px;
-    }
-  `}
-
-  ${props => props.one && `
-    &:after {
-      width: 48px;
-    }
+    width: 76px;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 16px 12px;
   `}
 `;
 

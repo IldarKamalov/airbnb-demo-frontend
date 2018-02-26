@@ -4,7 +4,7 @@ import arrow from './arrow.svg';
 
 const Wrap = styled.div`
   max-width: 265px;
-  margin: 5px auto 30px;
+  margin: auto auto 30px;
   text-align: center;
 `;
 

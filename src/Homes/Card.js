@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import times from 'lodash/times';
 import Stars from '../UI/Rating';
 
 const Card = styled(Link)`
@@ -49,8 +50,9 @@ const Rating = styled.div`
 `;
 
 const Review = styled.span`
-  margin-left: 6px;
+  margin-left: 7px;
   font-size: 12px;
+  line-height: 1;
 `;
 
 const Description = styled.p`
@@ -63,9 +65,17 @@ const Divider = styled.span`
   padding: 0 5px;
 `;
 
+const Superhost = styled.span``;
+
+const homeType = {
+  entire_home: 'Entire home',
+  private_room: 'Private room',
+  shared_room: 'Shared room',
+};
+
 export default props => (
   <Card to={props.to}>
-    <Img src={props.img} srcSet={`${props.img2x} 2x`} alt="homes" />
+    <Img src={props.img} alt="homes" />
     <Title>
       <Price>
         ${props.price}
@@ -73,16 +83,19 @@ export default props => (
       {props.title}
     </Title>
     <Description>
-      {props.homeType}
+      {homeType[props.kind]}
       <Divider>·</Divider>
-      {props.beds}
+      {props.beds} {props.beds > 1 ? 'beds' : 'bed'}
     </Description>
     <Rating>
-      <Stars five />
+      {times(Number(props.rating), i => <Stars key={i} />)}
       <Review>
         {props.reviewsCount}
-        <Divider>·</Divider>
-        {props.reviewsType}
+        {props.isSuperhost &&
+          <Superhost>
+            <Divider>·</Divider>Superhost
+          </Superhost>
+        }
       </Review>
     </Rating>
   </Card>

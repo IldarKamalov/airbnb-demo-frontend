@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-export const Homes = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   min-height: 100vh;
   padding-top: 80px;
 `;
 
 export const Cards = styled.div`
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   padding-top: 80px;
 
@@ -35,4 +37,4 @@ export const MapContainer = styled.div`
   }
  `;
 
-export default Homes;
+export default Wrapper;
