@@ -88,7 +88,7 @@ export default props => (
       {props.beds} {props.beds > 1 ? 'beds' : 'bed'}
     </Description>
     <Rating>
-      {times(Number(props.rating), () => <Stars />)}
+      {times(Number(props.rating), i => <Stars key={i} />)}
       <Review>
         {props.reviewsCount}
         {props.isSuperhost &&
