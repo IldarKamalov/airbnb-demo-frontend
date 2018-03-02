@@ -1,8 +1,11 @@
 language: node_js
 node_js:
-  - '9'
+- '9'
 install: yarn
 script:
-  - yarn build
-  - yarn deploy
+- yarn build
+- yarn deploy
 after_script: yarn alias
+env:
+  global:
+    secure: AmboGOEtFoAptiUVBQisHoqOU3cUB1sCEjurTExRb7zjT7hBCU+2Z3goLGzsswRsd8yIJ87ha4TBM4tsBiOUCAKzegVC7dUWWq1P2rs518Y78+7A9l8qbmvdjHotLlend87tfWqo1qIW3/xGqytPIfaqXoRjDkgV0/iMu1/F9/zUWwMHFF2MKLF2oCOcSaKMSHeKsFKm4QBhawCOhk4ovSoMuvo7kc/z1410Ow6+fFnPX83gU+tIRFak2I2TNS0xH2aGYtC2rErkvEB/GVx78It35De3ml6V+P1rDvDvyYl1pX0BDLeka6KYCmdP0faHzoQyip0V3y/FlMtzmNvdcM6WxME1X5HTOb2CqfNEE197rKDPOJPfyi1HXkeJygAmIMkT1rBMDdJ7mHfRVW1yUYdmLC0RZWb5tHHBRHj5VPiZ/oTyJksWzlqfICzl439LAdkq+aDAaUYOMBpjjpwgOhOHHG16K6Zk5QQS8DBpRFGa2rqgd8N3UIDxQMSFEdN+6EeQKz4P5TTSAZhfUb3uJsXt5Nh0KhGwQcu3VQ15PS/EZeKnXXuYdb0Hu2MQYj2YkUpcf0sDVzxeXeTguzYCs8TQErWEE5lQD3K9MxHzTukqNHS1sCMZU0M0uIpeeza7YNXINK5grcCdsxI79jyJ39r02Yl0AqsPFDfNov1zATI=
